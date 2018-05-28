@@ -1,0 +1,385 @@
+fileFormatVersion: 2
+guid: ca4a0549782d57248b119d247f13fd1a
+timeCreated: 1449314463
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: bullet decals_0
+    21300002: bullet decals_1
+    21300004: bullet decals_2
+    21300006: bullet decals_3
+    21300008: bullet decals_4
+    21300010: bullet decals_5
+    21300012: bullet decals_6
+    21300014: bullet decals_7
+    21300016: bullet decals_8
+    21300018: bullet decals_9
+    21300020: bullet decals_10
+    21300022: bullet decals_11
+    21300024: bullet decals_12
+    21300026: bullet decals_13
+    21300028: bullet decals_14
+    21300030: bullet decals_15
+    21300032: bullet decals_16
+    21300034: bullet decals_17
+    21300036: bullet decals_18
+    21300038: bullet decals_19
+    21300040: bullet decals_20
+    21300042: bullet decals_21
+    21300044: bullet decals_22
+    21300046: bullet decals_23
+    21300048: bullet decals_24
+    21300050: bullet decals_25
+    21300052: bullet decals_26
+    21300054: bullet decals_27
+    21300056: bullet decals_28
+    21300058: bullet decals_29
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: bullet decals_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 203
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bullet decals_1
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 205
+        width: 41
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bullet decals_2
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 205
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bullet decals_3
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 205
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bullet decals_4
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 203
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bullet decals_5
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 203
+        width: 50
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bullet decals_6
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 153
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bullet decals_7
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 152
+        width: 50
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bullet decals_8
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 151
+        width: 50
+        height: 52
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bullet decals_9
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 156
+        width: 43
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bullet decals_10
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 153
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bullet decals_11
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 153
+        width: 41
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bullet decals_12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 102
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bullet decals_13
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 106
+        width: 43
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bullet decals_14
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 103
+        width: 49
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bullet decals_15
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 106
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bullet decals_16
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 101
+        width: 50
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bullet decals_17
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 100
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bullet decals_18
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 56
+        width: 42
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bullet decals_19
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 53
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bullet decals_20
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 57
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bullet decals_21
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 54
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bullet decals_22
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 50
+        width: 43
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bullet decals_23
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 50
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bullet decals_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bullet decals_25
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bullet decals_26
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bullet decals_27
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 0
+        width: 50
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bullet decals_28
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 0
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bullet decals_29
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 1
+        width: 49
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

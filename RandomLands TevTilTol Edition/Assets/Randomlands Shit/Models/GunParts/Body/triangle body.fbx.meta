@@ -1,0 +1,339 @@
+fileFormatVersion: 2
+guid: a0a1ee080d1d4564d8765c48b5185611
+timeCreated: 1465205295
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Acc_Low
+    100002: Barrel
+    100004: Body_PARTNAME
+    100006: Boole_2
+    100008: Boole_Boole_1
+    100010: Boole_Boole_1_2
+    100012: Cloner
+    100014: Cloner_1
+    100016: Cube_0
+    100018: Cube_0_2
+    100020: Cube_1
+    100022: Cube_1_2
+    100024: Cube_1_3
+    100026: Cube_2
+    100028: Cube_2_2
+    100030: Cylinder
+    100032: Def_0_0
+    100034: Def_Lv_1
+    100036: Dmg_MED
+    100038: Fire_0_0
+    100040: Forward
+    100042: Frt_High
+    100044: gfx
+    100046: Magazine
+    100048: Null
+    100050: Reload_0_0
+    100052: REQUIRED
+    100054: Scope
+    100056: STATS
+    100058: Stock
+    100060: //RootNode
+    100062: Def_120_180
+    100064: Fire_0_120
+    400000: Acc_Low
+    400002: Barrel
+    400004: Body_PARTNAME
+    400006: Boole_2
+    400008: Boole_Boole_1
+    400010: Boole_Boole_1_2
+    400012: Cloner
+    400014: Cloner_1
+    400016: Cube_0
+    400018: Cube_0_2
+    400020: Cube_1
+    400022: Cube_1_2
+    400024: Cube_1_3
+    400026: Cube_2
+    400028: Cube_2_2
+    400030: Cylinder
+    400032: Def_0_0
+    400034: Def_Lv_1
+    400036: Dmg_MED
+    400038: Fire_0_0
+    400040: Forward
+    400042: Frt_High
+    400044: gfx
+    400046: Magazine
+    400048: Null
+    400050: Reload_0_0
+    400052: REQUIRED
+    400054: Scope
+    400056: STATS
+    400058: Stock
+    400060: //RootNode
+    400062: Def_120_180
+    400064: Fire_0_120
+    2300000: Boole_Boole_1_2
+    2300002: Cube_0
+    2300004: Cube_0_2
+    2300006: Cube_1
+    2300008: Cube_1_2
+    2300010: Cube_1_3
+    2300012: Cube_2
+    2300014: Cube_2_2
+    2300016: Cylinder
+    3300000: Boole_Boole_1_2
+    3300002: Cube_0
+    3300004: Cube_0_2
+    3300006: Cube_1
+    3300008: Cube_1_2
+    3300010: Cube_1_3
+    3300012: Cube_2
+    3300014: Cube_2_2
+    3300016: Cylinder
+    4300000: Cylinder
+    4300002: Cube_0
+    4300004: Cube_1
+    4300006: Cube_2
+    4300008: Cube_0_2
+    4300010: Cube_1_2
+    4300012: Cube_2_2
+    4300014: Boole_Boole_1_2
+    4300016: Cube_1_3
+    7400000: Def
+    7400002: Fire
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Def
+      takeName: Main
+      firstFrame: 150
+      lastFrame: 160
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Def_120_180
+        weight: 1
+      - path: Fire_0_120
+        weight: 1
+      - path: gfx
+        weight: 1
+      - path: gfx/Cube_1_3
+        weight: 1
+      - path: gfx/Cylinder
+        weight: 1
+      - path: gfx/Cylinder/Cloner
+        weight: 1
+      - path: gfx/Cylinder/Cloner/Cube_0_2
+        weight: 1
+      - path: gfx/Cylinder/Cloner/Cube_1_2
+        weight: 1
+      - path: gfx/Cylinder/Cloner/Cube_2_2
+        weight: 1
+      - path: gfx/Cylinder/Cloner_1
+        weight: 1
+      - path: gfx/Cylinder/Cloner_1/Cube_0
+        weight: 1
+      - path: gfx/Cylinder/Cloner_1/Cube_1
+        weight: 1
+      - path: gfx/Cylinder/Cloner_1/Cube_2
+        weight: 1
+      - path: gfx/Null
+        weight: 1
+      - path: gfx/Null/Boole_2
+        weight: 1
+      - path: gfx/Null/Boole_2/Boole_Boole_1
+        weight: 1
+      - path: gfx/Null/Boole_2/Boole_Boole_1/Boole_Boole_1_2
+        weight: 1
+      - path: Reload_0_0
+        weight: 1
+      - path: REQUIRED
+        weight: 1
+      - path: REQUIRED/Barrel
+        weight: 1
+      - path: REQUIRED/Magazine
+        weight: 1
+      - path: REQUIRED/Scope
+        weight: 1
+      - path: REQUIRED/Stock
+        weight: 1
+      - path: STATS
+        weight: 1
+      - path: STATS/Acc_Low
+        weight: 1
+      - path: STATS/Def_Lv_1
+        weight: 1
+      - path: STATS/Dmg_MED
+        weight: 1
+      - path: STATS/Frt_High
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Fire
+      takeName: Main
+      firstFrame: 0
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Def_120_180
+        weight: 1
+      - path: Fire_0_120
+        weight: 1
+      - path: gfx
+        weight: 1
+      - path: gfx/Cube_1_3
+        weight: 1
+      - path: gfx/Cylinder
+        weight: 1
+      - path: gfx/Cylinder/Cloner
+        weight: 1
+      - path: gfx/Cylinder/Cloner/Cube_0_2
+        weight: 1
+      - path: gfx/Cylinder/Cloner/Cube_1_2
+        weight: 1
+      - path: gfx/Cylinder/Cloner/Cube_2_2
+        weight: 1
+      - path: gfx/Cylinder/Cloner_1
+        weight: 1
+      - path: gfx/Cylinder/Cloner_1/Cube_0
+        weight: 1
+      - path: gfx/Cylinder/Cloner_1/Cube_1
+        weight: 1
+      - path: gfx/Cylinder/Cloner_1/Cube_2
+        weight: 1
+      - path: gfx/Null
+        weight: 1
+      - path: gfx/Null/Boole_2
+        weight: 1
+      - path: gfx/Null/Boole_2/Boole_Boole_1
+        weight: 1
+      - path: gfx/Null/Boole_2/Boole_Boole_1/Boole_Boole_1_2
+        weight: 1
+      - path: Reload_0_0
+        weight: 1
+      - path: REQUIRED
+        weight: 1
+      - path: REQUIRED/Barrel
+        weight: 1
+      - path: REQUIRED/Magazine
+        weight: 1
+      - path: REQUIRED/Scope
+        weight: 1
+      - path: REQUIRED/Stock
+        weight: 1
+      - path: STATS
+        weight: 1
+      - path: STATS/Acc_Low
+        weight: 1
+      - path: STATS/Def_Lv_1
+        weight: 1
+      - path: STATS/Dmg_MED
+        weight: 1
+      - path: STATS/Frt_High
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

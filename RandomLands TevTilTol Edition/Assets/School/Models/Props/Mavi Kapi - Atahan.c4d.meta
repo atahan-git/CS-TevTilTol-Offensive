@@ -1,0 +1,160 @@
+fileFormatVersion: 2
+guid: c20d08e36519a3446b8c61d32967cb0f
+timeCreated: 1488201946
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: cam
+    100002: CINEMA_4D_Editor
+    100004: Cube
+    100006: Cube_1
+    100008: Cube_1_2
+    100010: Cube_2
+    100012: kapi
+    100014: kapi_2
+    100016: kapi_3
+    100018: kulp
+    100020: //RootNode
+    100022: "\xE7er\xE7eve"
+    100024: Connect
+    100026: Connect_2
+    400000: cam
+    400002: CINEMA_4D_Editor
+    400004: Cube
+    400006: Cube_1
+    400008: Cube_1_2
+    400010: Cube_2
+    400012: kapi
+    400014: kapi_2
+    400016: kapi_3
+    400018: kulp
+    400020: //RootNode
+    400022: "\xE7er\xE7eve"
+    400024: Connect
+    400026: Connect_2
+    2300000: cam
+    2300002: Cube
+    2300004: Cube_1
+    2300006: Cube_1_2
+    2300008: Cube_2
+    2300010: kulp
+    3300000: cam
+    3300002: Cube
+    3300004: Cube_1
+    3300006: Cube_1_2
+    3300008: Cube_2
+    3300010: kulp
+    4300000: kulp
+    4300002: cam
+    4300004: Cube
+    4300006: Cube_1
+    4300008: Cube_2
+    4300010: Cube_1_2
+    6400000: cam
+    6400002: Cube
+    6400004: Cube_1
+    6400006: Cube_1_2
+    6400008: Cube_2
+    6400010: kulp
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: door_blue
+    second: {fileID: 2100000, guid: 15cb456e9c191784796c81a1ed1e106b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: door_metalic
+    second: {fileID: 2100000, guid: f0d839445fc2f864ba144b5b01806bea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: door_wood
+    second: {fileID: 2100000, guid: e83ed23b5f5bece4a807c4378ac806ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass
+    second: {fileID: 2100000, guid: 4424d98741aadab42a1e286c8385d9f2, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.012
+    meshCompression: 0
+    addColliders: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

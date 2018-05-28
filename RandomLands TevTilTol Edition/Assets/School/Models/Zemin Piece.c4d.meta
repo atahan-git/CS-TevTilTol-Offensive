@@ -1,0 +1,140 @@
+fileFormatVersion: 2
+guid: 3f0c3da342ac255419fe5f97c665b730
+timeCreated: 1476897581
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: 8_0
+    100002: 8_1
+    100004: 8_2
+    100006: 8_3
+    100008: 8_4
+    100010: 8_5
+    100012: 8_6
+    100014: 8_7
+    100016: CINEMA_4D_Editor
+    100018: merdivens_4
+    100020: zemin
+    100022: //RootNode
+    100024: zemin_1
+    100026: zemin_2
+    400000: 8_0
+    400002: 8_1
+    400004: 8_2
+    400006: 8_3
+    400008: 8_4
+    400010: 8_5
+    400012: 8_6
+    400014: 8_7
+    400016: CINEMA_4D_Editor
+    400018: merdivens_4
+    400020: zemin
+    400022: //RootNode
+    400024: zemin_1
+    400026: zemin_2
+    2300000: 8_0
+    2300002: 8_1
+    2300004: 8_2
+    2300006: 8_3
+    2300008: 8_4
+    2300010: 8_5
+    2300012: 8_6
+    2300014: 8_7
+    2300016: zemin_1
+    2300018: zemin_2
+    3300000: 8_0
+    3300002: 8_1
+    3300004: 8_2
+    3300006: 8_3
+    3300008: 8_4
+    3300010: 8_5
+    3300012: 8_6
+    3300014: 8_7
+    3300016: zemin_1
+    3300018: zemin_2
+    4300000: 8_0
+    4300002: 8_1
+    4300004: 8_2
+    4300006: 8_3
+    4300008: 8_4
+    4300010: 8_5
+    4300012: 8_6
+    4300014: 8_7
+    4300016: zemin_2
+    4300018: zemin_1
+    6400000: 8_0
+    6400002: 8_1
+    6400004: 8_2
+    6400006: 8_3
+    6400008: 8_4
+    6400010: 8_5
+    6400012: 8_6
+    6400014: 8_7
+    6400016: zemin_1
+    6400018: zemin_2
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0135
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

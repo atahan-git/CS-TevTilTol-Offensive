@@ -1,0 +1,248 @@
+fileFormatVersion: 2
+guid: 7bb0ee3b352182546a8c15952a6b6b18
+timeCreated: 1488201935
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: 123123
+    100002: 2
+    100004: 33123
+    100006: Cap_1
+    100008: Cap_1_2
+    100010: Cap_1_3
+    100012: Cap_1_4
+    100014: Cap_1_5
+    100016: Cap_2
+    100018: Cap_2_2
+    100020: Cap_2_3
+    100022: Cap_2_4
+    100024: Cap_2_5
+    100026: CINEMA_4D_Editor
+    100028: Cube
+    100030: Cube23
+    100032: Cube_1
+    100034: Cube_123
+    100036: Cube_131
+    100038: Cube_2
+    100040: koltuk
+    100042: N12312ull
+    100044: //RootNode
+    100046: Sweep
+    100048: Sweep_1
+    100050: Sweep_1_2
+    100052: Sweep_2
+    100054: Symm1231etry_1
+    100056: Symm2etry_1
+    100058: Symmetry_232
+    100060: "s\u0131ra"
+    100062: Connect
+    100064: Connect_2
+    400000: 123123
+    400002: 2
+    400004: 33123
+    400006: Cap_1
+    400008: Cap_1_2
+    400010: Cap_1_3
+    400012: Cap_1_4
+    400014: Cap_1_5
+    400016: Cap_2
+    400018: Cap_2_2
+    400020: Cap_2_3
+    400022: Cap_2_4
+    400024: Cap_2_5
+    400026: CINEMA_4D_Editor
+    400028: Cube
+    400030: Cube23
+    400032: Cube_1
+    400034: Cube_123
+    400036: Cube_131
+    400038: Cube_2
+    400040: koltuk
+    400042: N12312ull
+    400044: //RootNode
+    400046: Sweep
+    400048: Sweep_1
+    400050: Sweep_1_2
+    400052: Sweep_2
+    400054: Symm1231etry_1
+    400056: Symm2etry_1
+    400058: Symmetry_232
+    400060: "s\u0131ra"
+    400062: Connect
+    400064: Connect_2
+    2300000: 2
+    2300002: Cap_1
+    2300004: Cap_1_2
+    2300006: Cap_1_3
+    2300008: Cap_1_4
+    2300010: Cap_1_5
+    2300012: Cap_2
+    2300014: Cap_2_2
+    2300016: Cap_2_3
+    2300018: Cap_2_4
+    2300020: Cap_2_5
+    2300022: Cube
+    2300024: Cube23
+    2300026: Cube_1
+    2300028: Cube_123
+    2300030: Cube_131
+    2300032: Cube_2
+    2300034: Sweep
+    2300036: Sweep_1
+    2300038: Sweep_1_2
+    2300040: Sweep_2
+    3300000: 2
+    3300002: Cap_1
+    3300004: Cap_1_2
+    3300006: Cap_1_3
+    3300008: Cap_1_4
+    3300010: Cap_1_5
+    3300012: Cap_2
+    3300014: Cap_2_2
+    3300016: Cap_2_3
+    3300018: Cap_2_4
+    3300020: Cap_2_5
+    3300022: Cube
+    3300024: Cube23
+    3300026: Cube_1
+    3300028: Cube_123
+    3300030: Cube_131
+    3300032: Cube_2
+    3300034: Sweep
+    3300036: Sweep_1
+    3300038: Sweep_1_2
+    3300040: Sweep_2
+    4300000: Cube_123
+    4300002: Cube23
+    4300004: Sweep_1
+    4300006: Cap_1
+    4300008: Cap_2
+    4300010: Sweep
+    4300012: Cap_1_2
+    4300014: Cap_2_2
+    4300016: 2
+    4300018: Cap_1_3
+    4300020: Cap_2_3
+    4300022: Sweep_2
+    4300024: Cap_1_4
+    4300026: Cap_2_4
+    4300028: Sweep_1_2
+    4300030: Cap_1_5
+    4300032: Cap_2_5
+    4300034: Cube_2
+    4300036: Cube_1
+    4300038: Cube_131
+    4300040: Cube
+    6400000: 2
+    6400002: Cap_1
+    6400004: Cap_1_2
+    6400006: Cap_1_3
+    6400008: Cap_1_4
+    6400010: Cap_1_5
+    6400012: Cap_2
+    6400014: Cap_2_2
+    6400016: Cap_2_3
+    6400018: Cap_2_4
+    6400020: Cap_2_5
+    6400022: Cube
+    6400024: Cube23
+    6400026: Cube_1
+    6400028: Cube_123
+    6400030: Cube_131
+    6400032: Cube_2
+    6400034: Sweep
+    6400036: Sweep_1
+    6400038: Sweep_1_2
+    6400040: Sweep_2
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: black_metal
+    second: {fileID: 2100000, guid: 185734b7040b9544f84470d69aedab24, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: white_something
+    second: {fileID: 2100000, guid: e52dfe13f4f456945863b674b410072a, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.013
+    meshCompression: 0
+    addColliders: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

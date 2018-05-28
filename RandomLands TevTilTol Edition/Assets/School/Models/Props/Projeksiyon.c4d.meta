@@ -1,0 +1,140 @@
+fileFormatVersion: 2
+guid: 54fd28f56c8c7f147af4348a266ed3bf
+timeCreated: 1488201648
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Boole
+    100002: CINEMA_4D_Editor
+    100004: Cube
+    100006: Cylinder
+    100008: Cylinder_2
+    100010: "Kamera_Merce\u011Fi"
+    100012: Montaj_yeri
+    100014: Montaj_yeri_1
+    100016: oyuk
+    100018: //RootNode
+    100020: Projeksiyon
+    100022: "Kamera_Merce\u011Fi_1"
+    100024: Kamera_Mercegi
+    100026: Kamera_Mercegi_1
+    400000: Boole
+    400002: CINEMA_4D_Editor
+    400004: Cube
+    400006: Cylinder
+    400008: Cylinder_2
+    400010: "Kamera_Merce\u011Fi"
+    400012: Montaj_yeri
+    400014: Montaj_yeri_1
+    400016: oyuk
+    400018: //RootNode
+    400020: Projeksiyon
+    400022: "Kamera_Merce\u011Fi_1"
+    400024: Kamera_Mercegi
+    400026: Kamera_Mercegi_1
+    2300000: Cube
+    2300002: Cylinder
+    2300004: Cylinder_2
+    2300006: "Kamera_Merce\u011Fi"
+    2300008: Montaj_yeri
+    2300010: Montaj_yeri_1
+    2300012: oyuk
+    2300014: "Kamera_Merce\u011Fi_1"
+    2300016: Kamera_Mercegi
+    2300018: Kamera_Mercegi_1
+    3300000: Cube
+    3300002: Cylinder
+    3300004: Cylinder_2
+    3300006: "Kamera_Merce\u011Fi"
+    3300008: Montaj_yeri
+    3300010: Montaj_yeri_1
+    3300012: oyuk
+    3300014: "Kamera_Merce\u011Fi_1"
+    3300016: Kamera_Mercegi
+    3300018: Kamera_Mercegi_1
+    4300000: "Kamera_Merce\u011Fi"
+    4300002: Montaj_yeri_1
+    4300004: Montaj_yeri
+    4300006: Cylinder
+    4300008: Cube
+    4300010: Cylinder_2
+    4300012: oyuk
+    4300014: "Kamera_Merce\u011Fi_1"
+    4300016: Kamera_Mercegi
+    4300018: Kamera_Mercegi_1
+    6400000: Cube
+    6400002: Cylinder
+    6400004: Cylinder_2
+    6400006: "Kamera_Merce\u011Fi"
+    6400008: Montaj_yeri
+    6400010: Montaj_yeri_1
+    6400012: oyuk
+    6400014: "Kamera_Merce\u011Fi_1"
+    6400016: Kamera_Mercegi
+    6400018: Kamera_Mercegi_1
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.013
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

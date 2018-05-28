@@ -1,0 +1,1110 @@
+fileFormatVersion: 2
+guid: 4ab9bc50553a105448801e85934ce903
+timeCreated: 1451127160
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: 0_20_walk
+    100002: 30_65_attack
+    100004: 70_100_gear
+    100006: big_back
+    100008: big_front
+    100010: Cap_1
+    100012: Cap_1_2
+    100014: Cap_1_3
+    100016: Cap_1_4
+    100018: Cap_2
+    100020: Cap_2_2
+    100022: Cap_2_3
+    100024: Cap_2_4
+    100026: Cloner
+    100028: Cube
+    100030: Cube_1
+    100032: Cube_1_2
+    100034: Cube_1_3
+    100036: Cube_2_0
+    100038: Cube_2_1
+    100040: Cube_2_10
+    100042: Cube_2_11
+    100044: Cube_2_12
+    100046: Cube_2_13
+    100048: Cube_2_14
+    100050: Cube_2_15
+    100052: Cube_2_16
+    100054: Cube_2_17
+    100056: Cube_2_18
+    100058: Cube_2_19
+    100060: Cube_2_2
+    100062: Cube_2_20
+    100064: Cube_2_3
+    100066: Cube_2_4
+    100068: Cube_2_5
+    100070: Cube_2_6
+    100072: Cube_2_7
+    100074: Cube_2_8
+    100076: Cube_2_9
+    100078: Cylinder
+    100080: Cylinder_2
+    100082: Extrude
+    100084: middle
+    100086: Null
+    100088: rail
+    100090: rail_1
+    100092: rail_2
+    100094: rotatating_part
+    100096: //RootNode
+    100098: Spline
+    100100: Spline_1
+    100102: Spline_2
+    100104: tracks
+    100106: tracks_2
+    100108: tracks_3
+    100110: 0_40_walk
+    100112: 140_200_gear
+    100114: 60_130_attack
+    100116: 300_500_walk
+    100118: Cloner_1
+    100120: NitroBake_1
+    100122: Sweep
+    100124: advanced_tracks
+    100126: rail_0
+    100128: rail_10
+    100130: rail_11
+    100132: rail_12
+    100134: rail_13
+    100136: rail_14
+    100138: rail_15
+    100140: rail_16
+    100142: rail_17
+    100144: rail_18
+    100146: rail_19
+    100148: rail_20
+    100150: rail_21
+    100152: rail_22
+    100154: rail_23
+    100156: rail_24
+    100158: rail_25
+    100160: rail_26
+    100162: rail_27
+    100164: rail_28
+    100166: rail_29
+    100168: rail_3
+    100170: rail_4
+    100172: rail_5
+    100174: rail_6
+    100176: rail_7
+    100178: rail_8
+    100180: rail_9
+    100182: Spline_1_1
+    100184: Spline_1_2
+    400000: 0_20_walk
+    400002: 30_65_attack
+    400004: 70_100_gear
+    400006: big_back
+    400008: big_front
+    400010: Cap_1
+    400012: Cap_1_2
+    400014: Cap_1_3
+    400016: Cap_1_4
+    400018: Cap_2
+    400020: Cap_2_2
+    400022: Cap_2_3
+    400024: Cap_2_4
+    400026: Cloner
+    400028: Cube
+    400030: Cube_1
+    400032: Cube_1_2
+    400034: Cube_1_3
+    400036: Cube_2_0
+    400038: Cube_2_1
+    400040: Cube_2_10
+    400042: Cube_2_11
+    400044: Cube_2_12
+    400046: Cube_2_13
+    400048: Cube_2_14
+    400050: Cube_2_15
+    400052: Cube_2_16
+    400054: Cube_2_17
+    400056: Cube_2_18
+    400058: Cube_2_19
+    400060: Cube_2_2
+    400062: Cube_2_20
+    400064: Cube_2_3
+    400066: Cube_2_4
+    400068: Cube_2_5
+    400070: Cube_2_6
+    400072: Cube_2_7
+    400074: Cube_2_8
+    400076: Cube_2_9
+    400078: Cylinder
+    400080: Cylinder_2
+    400082: Extrude
+    400084: middle
+    400086: Null
+    400088: rail
+    400090: rail_1
+    400092: rail_2
+    400094: rotatating_part
+    400096: //RootNode
+    400098: Spline
+    400100: Spline_1
+    400102: Spline_2
+    400104: tracks
+    400106: tracks_2
+    400108: tracks_3
+    400110: 0_40_walk
+    400112: 140_200_gear
+    400114: 60_130_attack
+    400116: 300_500_walk
+    400118: Cloner_1
+    400120: NitroBake_1
+    400122: Sweep
+    400124: advanced_tracks
+    400126: rail_0
+    400128: rail_10
+    400130: rail_11
+    400132: rail_12
+    400134: rail_13
+    400136: rail_14
+    400138: rail_15
+    400140: rail_16
+    400142: rail_17
+    400144: rail_18
+    400146: rail_19
+    400148: rail_20
+    400150: rail_21
+    400152: rail_22
+    400154: rail_23
+    400156: rail_24
+    400158: rail_25
+    400160: rail_26
+    400162: rail_27
+    400164: rail_28
+    400166: rail_29
+    400168: rail_3
+    400170: rail_4
+    400172: rail_5
+    400174: rail_6
+    400176: rail_7
+    400178: rail_8
+    400180: rail_9
+    400182: Spline_1_1
+    400184: Spline_1_2
+    2300000: big_back
+    2300002: big_front
+    2300004: Cap_1
+    2300006: Cap_1_2
+    2300008: Cap_1_3
+    2300010: Cap_1_4
+    2300012: Cap_2
+    2300014: Cap_2_2
+    2300016: Cap_2_3
+    2300018: Cap_2_4
+    2300020: Cube
+    2300022: Cube_1
+    2300024: Cube_1_2
+    2300026: Cube_1_3
+    2300028: Cube_2_0
+    2300030: Cube_2_1
+    2300032: Cube_2_10
+    2300034: Cube_2_11
+    2300036: Cube_2_12
+    2300038: Cube_2_13
+    2300040: Cube_2_14
+    2300042: Cube_2_15
+    2300044: Cube_2_16
+    2300046: Cube_2_17
+    2300048: Cube_2_18
+    2300050: Cube_2_19
+    2300052: Cube_2_2
+    2300054: Cube_2_20
+    2300056: Cube_2_3
+    2300058: Cube_2_4
+    2300060: Cube_2_5
+    2300062: Cube_2_6
+    2300064: Cube_2_7
+    2300066: Cube_2_8
+    2300068: Cube_2_9
+    2300070: Cylinder
+    2300072: Cylinder_2
+    2300074: Extrude
+    2300076: middle
+    2300078: Cloner_1
+    2300080: Sweep
+    2300082: rail_0
+    2300084: rail_1
+    2300086: rail_10
+    2300088: rail_11
+    2300090: rail_12
+    2300092: rail_13
+    2300094: rail_14
+    2300096: rail_15
+    2300098: rail_16
+    2300100: rail_17
+    2300102: rail_18
+    2300104: rail_19
+    2300106: rail_2
+    2300108: rail_20
+    2300110: rail_21
+    2300112: rail_22
+    2300114: rail_23
+    2300116: rail_24
+    2300118: rail_25
+    2300120: rail_26
+    2300122: rail_27
+    2300124: rail_28
+    2300126: rail_29
+    2300128: rail_3
+    2300130: rail_4
+    2300132: rail_5
+    2300134: rail_6
+    2300136: rail_7
+    2300138: rail_8
+    2300140: rail_9
+    3300000: big_back
+    3300002: big_front
+    3300004: Cap_1
+    3300006: Cap_1_2
+    3300008: Cap_1_3
+    3300010: Cap_1_4
+    3300012: Cap_2
+    3300014: Cap_2_2
+    3300016: Cap_2_3
+    3300018: Cap_2_4
+    3300020: Cube
+    3300022: Cube_1
+    3300024: Cube_1_2
+    3300026: Cube_1_3
+    3300028: Cube_2_0
+    3300030: Cube_2_1
+    3300032: Cube_2_10
+    3300034: Cube_2_11
+    3300036: Cube_2_12
+    3300038: Cube_2_13
+    3300040: Cube_2_14
+    3300042: Cube_2_15
+    3300044: Cube_2_16
+    3300046: Cube_2_17
+    3300048: Cube_2_18
+    3300050: Cube_2_19
+    3300052: Cube_2_2
+    3300054: Cube_2_20
+    3300056: Cube_2_3
+    3300058: Cube_2_4
+    3300060: Cube_2_5
+    3300062: Cube_2_6
+    3300064: Cube_2_7
+    3300066: Cube_2_8
+    3300068: Cube_2_9
+    3300070: Cylinder
+    3300072: Cylinder_2
+    3300074: Extrude
+    3300076: middle
+    3300078: Cloner_1
+    3300080: Sweep
+    3300082: rail_0
+    3300084: rail_1
+    3300086: rail_10
+    3300088: rail_11
+    3300090: rail_12
+    3300092: rail_13
+    3300094: rail_14
+    3300096: rail_15
+    3300098: rail_16
+    3300100: rail_17
+    3300102: rail_18
+    3300104: rail_19
+    3300106: rail_2
+    3300108: rail_20
+    3300110: rail_21
+    3300112: rail_22
+    3300114: rail_23
+    3300116: rail_24
+    3300118: rail_25
+    3300120: rail_26
+    3300122: rail_27
+    3300124: rail_28
+    3300126: rail_29
+    3300128: rail_3
+    3300130: rail_4
+    3300132: rail_5
+    3300134: rail_6
+    3300136: rail_7
+    3300138: rail_8
+    3300140: rail_9
+    4300000: Cube_1
+    4300002: Cylinder
+    4300004: Cylinder_2
+    4300006: Extrude
+    4300008: Cap_1
+    4300010: Cap_2
+    4300012: Cube_1_2
+    4300014: Cube_2_0
+    4300016: Cube_2_1
+    4300018: Cube_2_2
+    4300020: Cube_2_3
+    4300022: Cube_2_4
+    4300024: Cube_2_5
+    4300026: Cube_2_6
+    4300028: Cube_2_7
+    4300030: Cube_2_8
+    4300032: Cube_2_9
+    4300034: Cube_2_10
+    4300036: Cube_2_11
+    4300038: Cube_2_12
+    4300040: Cube_2_13
+    4300042: Cube_2_14
+    4300044: Cube_2_15
+    4300046: Cube_2_16
+    4300048: Cube_2_17
+    4300050: Cube_2_18
+    4300052: Cube_2_19
+    4300054: Cube_2_20
+    4300056: Cube_1_3
+    4300058: big_back
+    4300060: Cap_1_2
+    4300062: Cap_2_2
+    4300064: big_front
+    4300066: Cap_1_3
+    4300068: Cap_2_3
+    4300070: middle
+    4300072: Cap_1_4
+    4300074: Cap_2_4
+    4300076: Cube
+    4300078: Cloner_1
+    4300080: Sweep
+    4300082: rail_0
+    4300084: rail_1
+    4300086: rail_2
+    4300088: rail_3
+    4300090: rail_4
+    4300092: rail_5
+    4300094: rail_6
+    4300096: rail_7
+    4300098: rail_8
+    4300100: rail_9
+    4300102: rail_10
+    4300104: rail_11
+    4300106: rail_12
+    4300108: rail_13
+    4300110: rail_14
+    4300112: rail_15
+    4300114: rail_16
+    4300116: rail_17
+    4300118: rail_18
+    4300120: rail_19
+    4300122: rail_20
+    4300124: rail_21
+    4300126: rail_22
+    4300128: rail_23
+    4300130: rail_24
+    4300132: rail_25
+    4300134: rail_26
+    4300136: rail_27
+    4300138: rail_28
+    4300140: rail_29
+    6400000: big_back
+    6400002: big_front
+    6400004: Cap_1
+    6400006: Cap_1_2
+    6400008: Cap_1_3
+    6400010: Cap_1_4
+    6400012: Cap_2
+    6400014: Cap_2_2
+    6400016: Cap_2_3
+    6400018: Cap_2_4
+    6400020: Cube
+    6400022: Cube_1
+    6400024: Cube_1_2
+    6400026: Cube_1_3
+    6400028: Cube_2_0
+    6400030: Cube_2_1
+    6400032: Cube_2_10
+    6400034: Cube_2_11
+    6400036: Cube_2_12
+    6400038: Cube_2_13
+    6400040: Cube_2_14
+    6400042: Cube_2_15
+    6400044: Cube_2_16
+    6400046: Cube_2_17
+    6400048: Cube_2_18
+    6400050: Cube_2_19
+    6400052: Cube_2_2
+    6400054: Cube_2_20
+    6400056: Cube_2_3
+    6400058: Cube_2_4
+    6400060: Cube_2_5
+    6400062: Cube_2_6
+    6400064: Cube_2_7
+    6400066: Cube_2_8
+    6400068: Cube_2_9
+    6400070: Cylinder
+    6400072: Cylinder_2
+    6400074: Extrude
+    6400076: middle
+    6400078: Cloner_1
+    6400080: Sweep
+    6400082: rail_0
+    6400084: rail_1
+    6400086: rail_10
+    6400088: rail_11
+    6400090: rail_12
+    6400092: rail_13
+    6400094: rail_14
+    6400096: rail_15
+    6400098: rail_16
+    6400100: rail_17
+    6400102: rail_18
+    6400104: rail_19
+    6400106: rail_2
+    6400108: rail_20
+    6400110: rail_21
+    6400112: rail_22
+    6400114: rail_23
+    6400116: rail_24
+    6400118: rail_25
+    6400120: rail_26
+    6400122: rail_27
+    6400124: rail_28
+    6400126: rail_29
+    6400128: rail_3
+    6400130: rail_4
+    6400132: rail_5
+    6400134: rail_6
+    6400136: rail_7
+    6400138: rail_8
+    6400140: rail_9
+    7400000: Move
+    7400002: Attack
+    7400004: Saw
+    7400006: idle
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Move
+      takeName: Main
+      firstFrame: 300
+      lastFrame: 500
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: 60_130_attack
+        weight: 1
+      - path: 140_200_gear
+        weight: 1
+      - path: 300_500_walk
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Cube_1
+        weight: 1
+      - path: rotatating_part
+        weight: 1
+      - path: rotatating_part/Cube_1_2
+        weight: 1
+      - path: rotatating_part/Cylinder
+        weight: 1
+      - path: rotatating_part/Cylinder_2
+        weight: 1
+      - path: rotatating_part/Cylinder_2/Extrude
+        weight: 1
+      - path: rotatating_part/Cylinder_2/Extrude/Cap_1
+        weight: 1
+      - path: rotatating_part/Cylinder_2/Extrude/Cap_2
+        weight: 1
+      - path: tracks
+        weight: 1
+      - path: tracks/tracks_2
+        weight: 1
+      - path: tracks/tracks_2/big_back
+        weight: 1
+      - path: tracks/tracks_2/big_back/Cap_1_2
+        weight: 1
+      - path: tracks/tracks_2/big_back/Cap_2_2
+        weight: 1
+      - path: tracks/tracks_2/big_front
+        weight: 1
+      - path: tracks/tracks_2/big_front/Cap_1_3
+        weight: 1
+      - path: tracks/tracks_2/big_front/Cap_2_3
+        weight: 1
+      - path: tracks/tracks_2/Cube_1_3
+        weight: 1
+      - path: tracks/tracks_2/middle
+        weight: 1
+      - path: tracks/tracks_2/middle/Cap_1_4
+        weight: 1
+      - path: tracks/tracks_2/middle/Cap_2_4
+        weight: 1
+      - path: tracks/tracks_2/tracks_3
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/advanced_tracks
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/advanced_tracks/Cloner
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/advanced_tracks/Cloner/rail_0
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/advanced_tracks/Cloner/rail_1
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/advanced_tracks/Cloner/rail_2
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/advanced_tracks/Cloner/rail_3
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/advanced_tracks/Cloner/rail_4
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/advanced_tracks/Cloner/rail_5
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/advanced_tracks/Cloner/rail_6
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/advanced_tracks/Cloner/rail_7
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/advanced_tracks/Cloner/rail_8
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/advanced_tracks/Cloner/rail_9
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/advanced_tracks/Cloner/rail_10
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/advanced_tracks/Cloner/rail_11
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/advanced_tracks/Cloner/rail_12
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/advanced_tracks/Cloner/rail_13
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/advanced_tracks/Cloner/rail_14
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/advanced_tracks/Cloner/rail_15
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/advanced_tracks/Cloner/rail_16
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/advanced_tracks/Cloner/rail_17
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/advanced_tracks/Cloner/rail_18
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/advanced_tracks/Cloner/rail_19
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/advanced_tracks/Cloner/rail_20
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/advanced_tracks/Cloner/rail_21
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/advanced_tracks/Cloner/rail_22
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/advanced_tracks/Cloner/rail_23
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/advanced_tracks/Cloner/rail_24
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/advanced_tracks/Cloner/rail_25
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/advanced_tracks/Cloner/rail_26
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/advanced_tracks/Cloner/rail_27
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/advanced_tracks/Cloner/rail_28
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/advanced_tracks/Cloner/rail_29
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/advanced_tracks/Spline_1
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/advanced_tracks/Spline_1/Spline_1_1
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/advanced_tracks/Spline_1/Spline_1_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Attack
+      takeName: Main
+      firstFrame: 60
+      lastFrame: 130
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: 0_20_walk
+        weight: 1
+      - path: 30_65_attack
+        weight: 1
+      - path: 70_100_gear
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Cube_1
+        weight: 1
+      - path: rotatating_part
+        weight: 1
+      - path: rotatating_part/Cube_1_2
+        weight: 1
+      - path: rotatating_part/Cylinder
+        weight: 1
+      - path: rotatating_part/Cylinder_2
+        weight: 1
+      - path: rotatating_part/Cylinder_2/Extrude
+        weight: 1
+      - path: rotatating_part/Cylinder_2/Extrude/Cap_1
+        weight: 1
+      - path: rotatating_part/Cylinder_2/Extrude/Cap_2
+        weight: 1
+      - path: tracks
+        weight: 1
+      - path: tracks/tracks_2
+        weight: 1
+      - path: tracks/tracks_2/big_back
+        weight: 1
+      - path: tracks/tracks_2/big_back/Cap_1_2
+        weight: 1
+      - path: tracks/tracks_2/big_back/Cap_2_2
+        weight: 1
+      - path: tracks/tracks_2/big_front
+        weight: 1
+      - path: tracks/tracks_2/big_front/Cap_1_3
+        weight: 1
+      - path: tracks/tracks_2/big_front/Cap_2_3
+        weight: 1
+      - path: tracks/tracks_2/Cube_1_3
+        weight: 1
+      - path: tracks/tracks_2/middle
+        weight: 1
+      - path: tracks/tracks_2/middle/Cap_1_4
+        weight: 1
+      - path: tracks/tracks_2/middle/Cap_2_4
+        weight: 1
+      - path: tracks/tracks_2/tracks_3
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_0
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_1
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_2
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_3
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_4
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_5
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_6
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_7
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_8
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_9
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_10
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_11
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_12
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_13
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_14
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_15
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_16
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_17
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_18
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_19
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_20
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/rail
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/rail/rail_1
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/rail/rail_2
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Spline
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Spline/Spline_1
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Spline/Spline_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Saw
+      takeName: Main
+      firstFrame: 140
+      lastFrame: 200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: 0_20_walk
+        weight: 1
+      - path: 30_65_attack
+        weight: 1
+      - path: 70_100_gear
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Cube_1
+        weight: 1
+      - path: rotatating_part
+        weight: 1
+      - path: rotatating_part/Cube_1_2
+        weight: 1
+      - path: rotatating_part/Cylinder
+        weight: 1
+      - path: rotatating_part/Cylinder_2
+        weight: 1
+      - path: rotatating_part/Cylinder_2/Extrude
+        weight: 1
+      - path: rotatating_part/Cylinder_2/Extrude/Cap_1
+        weight: 1
+      - path: rotatating_part/Cylinder_2/Extrude/Cap_2
+        weight: 1
+      - path: tracks
+        weight: 1
+      - path: tracks/tracks_2
+        weight: 1
+      - path: tracks/tracks_2/big_back
+        weight: 1
+      - path: tracks/tracks_2/big_back/Cap_1_2
+        weight: 1
+      - path: tracks/tracks_2/big_back/Cap_2_2
+        weight: 1
+      - path: tracks/tracks_2/big_front
+        weight: 1
+      - path: tracks/tracks_2/big_front/Cap_1_3
+        weight: 1
+      - path: tracks/tracks_2/big_front/Cap_2_3
+        weight: 1
+      - path: tracks/tracks_2/Cube_1_3
+        weight: 1
+      - path: tracks/tracks_2/middle
+        weight: 1
+      - path: tracks/tracks_2/middle/Cap_1_4
+        weight: 1
+      - path: tracks/tracks_2/middle/Cap_2_4
+        weight: 1
+      - path: tracks/tracks_2/tracks_3
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_0
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_1
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_2
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_3
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_4
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_5
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_6
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_7
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_8
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_9
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_10
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_11
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_12
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_13
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_14
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_15
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_16
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_17
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_18
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_19
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_20
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/rail
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/rail/rail_1
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/rail/rail_2
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Spline
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Spline/Spline_1
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Spline/Spline_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: idle
+      takeName: Main
+      firstFrame: 45
+      lastFrame: 55
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: 0_20_walk
+        weight: 1
+      - path: 30_65_attack
+        weight: 1
+      - path: 70_100_gear
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Cube_1
+        weight: 1
+      - path: rotatating_part
+        weight: 1
+      - path: rotatating_part/Cube_1_2
+        weight: 1
+      - path: rotatating_part/Cylinder
+        weight: 1
+      - path: rotatating_part/Cylinder_2
+        weight: 1
+      - path: rotatating_part/Cylinder_2/Extrude
+        weight: 1
+      - path: rotatating_part/Cylinder_2/Extrude/Cap_1
+        weight: 1
+      - path: rotatating_part/Cylinder_2/Extrude/Cap_2
+        weight: 1
+      - path: tracks
+        weight: 1
+      - path: tracks/tracks_2
+        weight: 1
+      - path: tracks/tracks_2/big_back
+        weight: 1
+      - path: tracks/tracks_2/big_back/Cap_1_2
+        weight: 1
+      - path: tracks/tracks_2/big_back/Cap_2_2
+        weight: 1
+      - path: tracks/tracks_2/big_front
+        weight: 1
+      - path: tracks/tracks_2/big_front/Cap_1_3
+        weight: 1
+      - path: tracks/tracks_2/big_front/Cap_2_3
+        weight: 1
+      - path: tracks/tracks_2/Cube_1_3
+        weight: 1
+      - path: tracks/tracks_2/middle
+        weight: 1
+      - path: tracks/tracks_2/middle/Cap_1_4
+        weight: 1
+      - path: tracks/tracks_2/middle/Cap_2_4
+        weight: 1
+      - path: tracks/tracks_2/tracks_3
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_0
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_1
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_2
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_3
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_4
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_5
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_6
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_7
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_8
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_9
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_10
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_11
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_12
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_13
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_14
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_15
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_16
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_17
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_18
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_19
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Null/Cloner/Cube_2_20
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/rail
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/rail/rail_1
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/rail/rail_2
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Spline
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Spline/Spline_1
+        weight: 1
+      - path: tracks/tracks_2/tracks_3/Spline/Spline_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.5
+    meshCompression: 3
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

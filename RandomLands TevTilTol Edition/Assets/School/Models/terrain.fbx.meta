@@ -1,0 +1,195 @@
+fileFormatVersion: 2
+guid: ed6607a4da087734ea36d2a31aa71c1c
+timeCreated: 1451755676
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: altloj
+    100002: altloj1
+    100004: altloj2
+    100006: anabina
+    100008: edebi
+    100010: fen
+    100012: loj1
+    100014: loj2
+    100016: loj3
+    100018: loj4
+    100020: loj5
+    100022: loj6
+    100024: placeholders
+    100026: prep
+    100028: revirque
+    100030: roads
+    100032: "sedefo\u011Flu"
+    100034: tekcan
+    100036: terrain
+    100038: //RootNode
+    100040: yatak1
+    100042: yatak2
+    100044: yatak3
+    100046: yatak4
+    100048: yatak5
+    100050: yatak6
+    400000: altloj
+    400002: altloj1
+    400004: altloj2
+    400006: anabina
+    400008: edebi
+    400010: fen
+    400012: loj1
+    400014: loj2
+    400016: loj3
+    400018: loj4
+    400020: loj5
+    400022: loj6
+    400024: placeholders
+    400026: prep
+    400028: revirque
+    400030: roads
+    400032: "sedefo\u011Flu"
+    400034: tekcan
+    400036: //RootNode
+    400038: terrain
+    400040: yatak1
+    400042: yatak2
+    400044: yatak3
+    400046: yatak4
+    400048: yatak5
+    400050: yatak6
+    2300000: altloj
+    2300002: altloj1
+    2300004: altloj2
+    2300006: anabina
+    2300008: edebi
+    2300010: fen
+    2300012: loj1
+    2300014: loj2
+    2300016: loj3
+    2300018: loj4
+    2300020: loj5
+    2300022: loj6
+    2300024: prep
+    2300026: revirque
+    2300028: roads
+    2300030: "sedefo\u011Flu"
+    2300032: tekcan
+    2300034: terrain
+    2300036: yatak1
+    2300038: yatak2
+    2300040: yatak3
+    2300042: yatak4
+    2300044: yatak5
+    2300046: yatak6
+    3300000: altloj
+    3300002: altloj1
+    3300004: altloj2
+    3300006: anabina
+    3300008: edebi
+    3300010: fen
+    3300012: loj1
+    3300014: loj2
+    3300016: loj3
+    3300018: loj4
+    3300020: loj5
+    3300022: loj6
+    3300024: prep
+    3300026: revirque
+    3300028: roads
+    3300030: "sedefo\u011Flu"
+    3300032: tekcan
+    3300034: terrain
+    3300036: yatak1
+    3300038: yatak2
+    3300040: yatak3
+    3300042: yatak4
+    3300044: yatak5
+    3300046: yatak6
+    4300000: roads
+    4300002: altloj
+    4300004: altloj1
+    4300006: altloj2
+    4300008: fen
+    4300010: yatak1
+    4300012: yatak2
+    4300014: yatak3
+    4300016: yatak4
+    4300018: loj1
+    4300020: loj2
+    4300022: prep
+    4300024: yatak5
+    4300026: edebi
+    4300028: loj3
+    4300030: loj4
+    4300032: loj5
+    4300034: loj6
+    4300036: revirque
+    4300038: yatak6
+    4300040: "sedefo\u011Flu"
+    4300042: tekcan
+    4300044: anabina
+    4300046: terrain
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 50
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1462 @@
+fileFormatVersion: 2
+guid: dd3451ee97e840746ac91cac37a61e22
+timeCreated: 1463581310
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: 140_200_gear
+    100002: 140_200_gear_2
+    100004: 300_500_walk
+    100006: 300_500_walk_2
+    100008: 60_130_attack
+    100010: 60_130_attack_2
+    100012: advanced_tracks
+    100014: advanced_tracks_2
+    100016: barrel_point
+    100018: barrel_point_2
+    100020: big_back
+    100022: big_back_2
+    100024: big_front
+    100026: big_front_2
+    100028: Boole_1
+    100030: Boole_1_2
+    100032: Boole_1_3
+    100034: Boole_1_4
+    100036: Cap_1
+    100038: Cap_1_2
+    100040: Cap_1_3
+    100042: Cap_1_4
+    100044: Cap_1_5
+    100046: Cap_1_6
+    100048: Cap_2
+    100050: Cap_2_2
+    100052: Cap_2_3
+    100054: Cap_2_4
+    100056: Cap_2_5
+    100058: Cap_2_6
+    100060: Cloner
+    100062: Cloner_2
+    100064: Cloner_3
+    100066: Cloner_4
+    100068: Cloner_5
+    100070: Cloner_6
+    100072: Cube
+    100074: Cube_0
+    100076: Cube_0_2
+    100078: Cube_1
+    100080: Cube_1_2
+    100082: Cube_1_3
+    100084: Cube_1_4
+    100086: Cube_1_5
+    100088: Cube_2
+    100090: Cube_2_2
+    100092: Cube_2_3
+    100094: Cube_3
+    100096: Cube_3_2
+    100098: Cube_4
+    100100: Cube_5
+    100102: Cube_6
+    100104: Cylinder
+    100106: Cylinder_0
+    100108: Cylinder_0_2
+    100110: Cylinder_1
+    100112: Cylinder_1_2
+    100114: Cylinder_2
+    100116: Cylinder_2_2
+    100118: Cylinder_3
+    100120: Cylinder_3_2
+    100122: G_Rocket
+    100124: G_Rocket_2
+    100126: gun
+    100128: middle
+    100130: middle_2
+    100132: out
+    100134: out_2
+    100136: rail_0
+    100138: rail_0_2
+    100140: rail_1
+    100142: rail_10
+    100144: rail_10_2
+    100146: rail_11
+    100148: rail_11_2
+    100150: rail_12
+    100152: rail_12_2
+    100154: rail_13
+    100156: rail_13_2
+    100158: rail_14
+    100160: rail_14_2
+    100162: rail_15
+    100164: rail_15_2
+    100166: rail_16
+    100168: rail_16_2
+    100170: rail_17
+    100172: rail_17_2
+    100174: rail_18
+    100176: rail_18_2
+    100178: rail_19
+    100180: rail_19_2
+    100182: rail_1_2
+    100184: rail_2
+    100186: rail_20
+    100188: rail_20_2
+    100190: rail_21
+    100192: rail_21_2
+    100194: rail_22
+    100196: rail_22_2
+    100198: rail_23
+    100200: rail_23_2
+    100202: rail_24
+    100204: rail_24_2
+    100206: rail_25
+    100208: rail_25_2
+    100210: rail_26
+    100212: rail_26_2
+    100214: rail_27
+    100216: rail_27_2
+    100218: rail_28
+    100220: rail_28_2
+    100222: rail_29
+    100224: rail_29_2
+    100226: rail_2_2
+    100228: rail_3
+    100230: rail_3_2
+    100232: rail_4
+    100234: rail_4_2
+    100236: rail_5
+    100238: rail_5_2
+    100240: rail_6
+    100242: rail_6_2
+    100244: rail_7
+    100246: rail_7_2
+    100248: rail_8
+    100250: rail_8_2
+    100252: rail_9
+    100254: rail_9_2
+    100256: //RootNode
+    100258: rocket_0
+    100260: rocket_0_2
+    100262: rocket_1
+    100264: rocket_1_2
+    100266: rocket_2
+    100268: rocket_2_2
+    100270: rocket_3
+    100272: rocket_3_2
+    100274: roketter
+    100276: roketter_2
+    100278: SawTank_1
+    100280: Spline_1
+    100282: Spline_1_2_2
+    100284: Symmetry
+    100286: Symmetry_2
+    100288: Symmetry_3
+    100290: Symmetry_4
+    100292: tracks
+    100294: tracks_2
+    100296: tracks_3
+    100298: tracks_4
+    100300: tracks_5
+    100302: tracks_6
+    100304: Tube
+    100306: Tube_2
+    400000: 140_200_gear
+    400002: 140_200_gear_2
+    400004: 300_500_walk
+    400006: 300_500_walk_2
+    400008: 60_130_attack
+    400010: 60_130_attack_2
+    400012: advanced_tracks
+    400014: advanced_tracks_2
+    400016: barrel_point
+    400018: barrel_point_2
+    400020: big_back
+    400022: big_back_2
+    400024: big_front
+    400026: big_front_2
+    400028: Boole_1
+    400030: Boole_1_2
+    400032: Boole_1_3
+    400034: Boole_1_4
+    400036: Cap_1
+    400038: Cap_1_2
+    400040: Cap_1_3
+    400042: Cap_1_4
+    400044: Cap_1_5
+    400046: Cap_1_6
+    400048: Cap_2
+    400050: Cap_2_2
+    400052: Cap_2_3
+    400054: Cap_2_4
+    400056: Cap_2_5
+    400058: Cap_2_6
+    400060: Cloner
+    400062: Cloner_2
+    400064: Cloner_3
+    400066: Cloner_4
+    400068: Cloner_5
+    400070: Cloner_6
+    400072: Cube
+    400074: Cube_0
+    400076: Cube_0_2
+    400078: Cube_1
+    400080: Cube_1_2
+    400082: Cube_1_3
+    400084: Cube_1_4
+    400086: Cube_1_5
+    400088: Cube_2
+    400090: Cube_2_2
+    400092: Cube_2_3
+    400094: Cube_3
+    400096: Cube_3_2
+    400098: Cube_4
+    400100: Cube_5
+    400102: Cube_6
+    400104: Cylinder
+    400106: Cylinder_0
+    400108: Cylinder_0_2
+    400110: Cylinder_1
+    400112: Cylinder_1_2
+    400114: Cylinder_2
+    400116: Cylinder_2_2
+    400118: Cylinder_3
+    400120: Cylinder_3_2
+    400122: G_Rocket
+    400124: G_Rocket_2
+    400126: gun
+    400128: middle
+    400130: middle_2
+    400132: out
+    400134: out_2
+    400136: rail_0
+    400138: rail_0_2
+    400140: rail_1
+    400142: rail_10
+    400144: rail_10_2
+    400146: rail_11
+    400148: rail_11_2
+    400150: rail_12
+    400152: rail_12_2
+    400154: rail_13
+    400156: rail_13_2
+    400158: rail_14
+    400160: rail_14_2
+    400162: rail_15
+    400164: rail_15_2
+    400166: rail_16
+    400168: rail_16_2
+    400170: rail_17
+    400172: rail_17_2
+    400174: rail_18
+    400176: rail_18_2
+    400178: rail_19
+    400180: rail_19_2
+    400182: rail_1_2
+    400184: rail_2
+    400186: rail_20
+    400188: rail_20_2
+    400190: rail_21
+    400192: rail_21_2
+    400194: rail_22
+    400196: rail_22_2
+    400198: rail_23
+    400200: rail_23_2
+    400202: rail_24
+    400204: rail_24_2
+    400206: rail_25
+    400208: rail_25_2
+    400210: rail_26
+    400212: rail_26_2
+    400214: rail_27
+    400216: rail_27_2
+    400218: rail_28
+    400220: rail_28_2
+    400222: rail_29
+    400224: rail_29_2
+    400226: rail_2_2
+    400228: rail_3
+    400230: rail_3_2
+    400232: rail_4
+    400234: rail_4_2
+    400236: rail_5
+    400238: rail_5_2
+    400240: rail_6
+    400242: rail_6_2
+    400244: rail_7
+    400246: rail_7_2
+    400248: rail_8
+    400250: rail_8_2
+    400252: rail_9
+    400254: rail_9_2
+    400256: //RootNode
+    400258: rocket_0
+    400260: rocket_0_2
+    400262: rocket_1
+    400264: rocket_1_2
+    400266: rocket_2
+    400268: rocket_2_2
+    400270: rocket_3
+    400272: rocket_3_2
+    400274: roketter
+    400276: roketter_2
+    400278: SawTank_1
+    400280: Spline_1
+    400282: Spline_1_2_2
+    400284: Symmetry
+    400286: Symmetry_2
+    400288: Symmetry_3
+    400290: Symmetry_4
+    400292: tracks
+    400294: tracks_2
+    400296: tracks_3
+    400298: tracks_4
+    400300: tracks_5
+    400302: tracks_6
+    400304: Tube
+    400306: Tube_2
+    2300000: big_back
+    2300002: big_back_2
+    2300004: big_front
+    2300006: big_front_2
+    2300008: Cap_1
+    2300010: Cap_1_2
+    2300012: Cap_1_3
+    2300014: Cap_1_4
+    2300016: Cap_1_5
+    2300018: Cap_1_6
+    2300020: Cap_2
+    2300022: Cap_2_2
+    2300024: Cap_2_3
+    2300026: Cap_2_4
+    2300028: Cap_2_5
+    2300030: Cap_2_6
+    2300032: Cube_0
+    2300034: Cube_0_2
+    2300036: Cube_1
+    2300038: Cube_1_2
+    2300040: Cube_1_3
+    2300042: Cube_1_4
+    2300044: Cube_1_5
+    2300046: Cube_2
+    2300048: Cube_2_2
+    2300050: Cube_2_3
+    2300052: Cube_3_2
+    2300054: Cube_4
+    2300056: Cube_5
+    2300058: Cube_6
+    2300060: Cylinder
+    2300062: Cylinder_0_2
+    2300064: Cylinder_1_2
+    2300066: Cylinder_2_2
+    2300068: Cylinder_3_2
+    2300070: middle
+    2300072: middle_2
+    2300074: rail_0
+    2300076: rail_0_2
+    2300078: rail_1
+    2300080: rail_10
+    2300082: rail_10_2
+    2300084: rail_11
+    2300086: rail_11_2
+    2300088: rail_12
+    2300090: rail_12_2
+    2300092: rail_13
+    2300094: rail_13_2
+    2300096: rail_14
+    2300098: rail_14_2
+    2300100: rail_15
+    2300102: rail_15_2
+    2300104: rail_16
+    2300106: rail_16_2
+    2300108: rail_17
+    2300110: rail_17_2
+    2300112: rail_18
+    2300114: rail_18_2
+    2300116: rail_19
+    2300118: rail_19_2
+    2300120: rail_1_2
+    2300122: rail_2
+    2300124: rail_20
+    2300126: rail_20_2
+    2300128: rail_21
+    2300130: rail_21_2
+    2300132: rail_22
+    2300134: rail_22_2
+    2300136: rail_23
+    2300138: rail_23_2
+    2300140: rail_24
+    2300142: rail_24_2
+    2300144: rail_25
+    2300146: rail_25_2
+    2300148: rail_26
+    2300150: rail_26_2
+    2300152: rail_27
+    2300154: rail_27_2
+    2300156: rail_28
+    2300158: rail_28_2
+    2300160: rail_29
+    2300162: rail_29_2
+    2300164: rail_2_2
+    2300166: rail_3
+    2300168: rail_3_2
+    2300170: rail_4
+    2300172: rail_4_2
+    2300174: rail_5
+    2300176: rail_5_2
+    2300178: rail_6
+    2300180: rail_6_2
+    2300182: rail_7
+    2300184: rail_7_2
+    2300186: rail_8
+    2300188: rail_8_2
+    2300190: rail_9
+    2300192: rail_9_2
+    2300194: rocket_0_2
+    2300196: rocket_1_2
+    2300198: rocket_2_2
+    2300200: rocket_3_2
+    2300202: Tube_2
+    3300000: big_back
+    3300002: big_back_2
+    3300004: big_front
+    3300006: big_front_2
+    3300008: Cap_1
+    3300010: Cap_1_2
+    3300012: Cap_1_3
+    3300014: Cap_1_4
+    3300016: Cap_1_5
+    3300018: Cap_1_6
+    3300020: Cap_2
+    3300022: Cap_2_2
+    3300024: Cap_2_3
+    3300026: Cap_2_4
+    3300028: Cap_2_5
+    3300030: Cap_2_6
+    3300032: Cube_0
+    3300034: Cube_0_2
+    3300036: Cube_1
+    3300038: Cube_1_2
+    3300040: Cube_1_3
+    3300042: Cube_1_4
+    3300044: Cube_1_5
+    3300046: Cube_2
+    3300048: Cube_2_2
+    3300050: Cube_2_3
+    3300052: Cube_3_2
+    3300054: Cube_4
+    3300056: Cube_5
+    3300058: Cube_6
+    3300060: Cylinder
+    3300062: Cylinder_0_2
+    3300064: Cylinder_1_2
+    3300066: Cylinder_2_2
+    3300068: Cylinder_3_2
+    3300070: middle
+    3300072: middle_2
+    3300074: rail_0
+    3300076: rail_0_2
+    3300078: rail_1
+    3300080: rail_10
+    3300082: rail_10_2
+    3300084: rail_11
+    3300086: rail_11_2
+    3300088: rail_12
+    3300090: rail_12_2
+    3300092: rail_13
+    3300094: rail_13_2
+    3300096: rail_14
+    3300098: rail_14_2
+    3300100: rail_15
+    3300102: rail_15_2
+    3300104: rail_16
+    3300106: rail_16_2
+    3300108: rail_17
+    3300110: rail_17_2
+    3300112: rail_18
+    3300114: rail_18_2
+    3300116: rail_19
+    3300118: rail_19_2
+    3300120: rail_1_2
+    3300122: rail_2
+    3300124: rail_20
+    3300126: rail_20_2
+    3300128: rail_21
+    3300130: rail_21_2
+    3300132: rail_22
+    3300134: rail_22_2
+    3300136: rail_23
+    3300138: rail_23_2
+    3300140: rail_24
+    3300142: rail_24_2
+    3300144: rail_25
+    3300146: rail_25_2
+    3300148: rail_26
+    3300150: rail_26_2
+    3300152: rail_27
+    3300154: rail_27_2
+    3300156: rail_28
+    3300158: rail_28_2
+    3300160: rail_29
+    3300162: rail_29_2
+    3300164: rail_2_2
+    3300166: rail_3
+    3300168: rail_3_2
+    3300170: rail_4
+    3300172: rail_4_2
+    3300174: rail_5
+    3300176: rail_5_2
+    3300178: rail_6
+    3300180: rail_6_2
+    3300182: rail_7
+    3300184: rail_7_2
+    3300186: rail_8
+    3300188: rail_8_2
+    3300190: rail_9
+    3300192: rail_9_2
+    3300194: rocket_0_2
+    3300196: rocket_1_2
+    3300198: rocket_2_2
+    3300200: rocket_3_2
+    3300202: Tube_2
+    4300000: Cube_0
+    4300002: Cube_1
+    4300004: Cube_2
+    4300006: rocket_0_2
+    4300008: rocket_1_2
+    4300010: rocket_2_2
+    4300012: rocket_3_2
+    4300014: Cube_2_2
+    4300016: Cube_4
+    4300018: Tube_2
+    4300020: Cylinder_0_2
+    4300022: Cylinder_1_2
+    4300024: Cylinder_2_2
+    4300026: Cylinder_3_2
+    4300028: Cube_0_2
+    4300030: Cube_1_2
+    4300032: Cube_2_3
+    4300034: Cube_3_2
+    4300036: Cylinder
+    4300038: rail_0
+    4300040: rail_1
+    4300042: rail_2
+    4300044: rail_3
+    4300046: rail_4
+    4300048: rail_5
+    4300050: rail_6
+    4300052: rail_7
+    4300054: rail_8
+    4300056: rail_9
+    4300058: rail_10
+    4300060: rail_11
+    4300062: rail_12
+    4300064: rail_13
+    4300066: rail_14
+    4300068: rail_15
+    4300070: rail_16
+    4300072: rail_17
+    4300074: rail_18
+    4300076: rail_19
+    4300078: rail_20
+    4300080: rail_21
+    4300082: rail_22
+    4300084: rail_23
+    4300086: rail_24
+    4300088: rail_25
+    4300090: rail_26
+    4300092: rail_27
+    4300094: rail_28
+    4300096: rail_29
+    4300098: Cube_1_3
+    4300100: big_back
+    4300102: Cap_1
+    4300104: Cap_2
+    4300106: big_front
+    4300108: Cap_1_2
+    4300110: Cap_2_2
+    4300112: middle
+    4300114: Cap_1_3
+    4300116: Cap_2_3
+    4300118: Cube_5
+    4300120: Cube_1_4
+    4300122: rail_0_2
+    4300124: rail_1_2
+    4300126: rail_2_2
+    4300128: rail_3_2
+    4300130: rail_4_2
+    4300132: rail_5_2
+    4300134: rail_6_2
+    4300136: rail_7_2
+    4300138: rail_8_2
+    4300140: rail_9_2
+    4300142: rail_10_2
+    4300144: rail_11_2
+    4300146: rail_12_2
+    4300148: rail_13_2
+    4300150: rail_14_2
+    4300152: rail_15_2
+    4300154: rail_16_2
+    4300156: rail_17_2
+    4300158: rail_18_2
+    4300160: rail_19_2
+    4300162: rail_20_2
+    4300164: rail_21_2
+    4300166: rail_22_2
+    4300168: rail_23_2
+    4300170: rail_24_2
+    4300172: rail_25_2
+    4300174: rail_26_2
+    4300176: rail_27_2
+    4300178: rail_28_2
+    4300180: rail_29_2
+    4300182: Cube_1_5
+    4300184: big_back_2
+    4300186: Cap_1_4
+    4300188: Cap_2_4
+    4300190: big_front_2
+    4300192: Cap_1_5
+    4300194: Cap_2_5
+    4300196: middle_2
+    4300198: Cap_1_6
+    4300200: Cap_2_6
+    4300202: Cube_6
+    6400000: big_back
+    6400002: big_back_2
+    6400004: big_front
+    6400006: big_front_2
+    6400008: Cap_1
+    6400010: Cap_1_2
+    6400012: Cap_1_3
+    6400014: Cap_1_4
+    6400016: Cap_1_5
+    6400018: Cap_1_6
+    6400020: Cap_2
+    6400022: Cap_2_2
+    6400024: Cap_2_3
+    6400026: Cap_2_4
+    6400028: Cap_2_5
+    6400030: Cap_2_6
+    6400032: Cube_0
+    6400034: Cube_0_2
+    6400036: Cube_1
+    6400038: Cube_1_2
+    6400040: Cube_1_3
+    6400042: Cube_1_4
+    6400044: Cube_1_5
+    6400046: Cube_2
+    6400048: Cube_2_2
+    6400050: Cube_2_3
+    6400052: Cube_3_2
+    6400054: Cube_4
+    6400056: Cube_5
+    6400058: Cube_6
+    6400060: Cylinder
+    6400062: Cylinder_0_2
+    6400064: Cylinder_1_2
+    6400066: Cylinder_2_2
+    6400068: Cylinder_3_2
+    6400070: middle
+    6400072: middle_2
+    6400074: rail_0
+    6400076: rail_0_2
+    6400078: rail_1
+    6400080: rail_10
+    6400082: rail_10_2
+    6400084: rail_11
+    6400086: rail_11_2
+    6400088: rail_12
+    6400090: rail_12_2
+    6400092: rail_13
+    6400094: rail_13_2
+    6400096: rail_14
+    6400098: rail_14_2
+    6400100: rail_15
+    6400102: rail_15_2
+    6400104: rail_16
+    6400106: rail_16_2
+    6400108: rail_17
+    6400110: rail_17_2
+    6400112: rail_18
+    6400114: rail_18_2
+    6400116: rail_19
+    6400118: rail_19_2
+    6400120: rail_1_2
+    6400122: rail_2
+    6400124: rail_20
+    6400126: rail_20_2
+    6400128: rail_21
+    6400130: rail_21_2
+    6400132: rail_22
+    6400134: rail_22_2
+    6400136: rail_23
+    6400138: rail_23_2
+    6400140: rail_24
+    6400142: rail_24_2
+    6400144: rail_25
+    6400146: rail_25_2
+    6400148: rail_26
+    6400150: rail_26_2
+    6400152: rail_27
+    6400154: rail_27_2
+    6400156: rail_28
+    6400158: rail_28_2
+    6400160: rail_29
+    6400162: rail_29_2
+    6400164: rail_2_2
+    6400166: rail_3
+    6400168: rail_3_2
+    6400170: rail_4
+    6400172: rail_4_2
+    6400174: rail_5
+    6400176: rail_5_2
+    6400178: rail_6
+    6400180: rail_6_2
+    6400182: rail_7
+    6400184: rail_7_2
+    6400186: rail_8
+    6400188: rail_8_2
+    6400190: rail_9
+    6400192: rail_9_2
+    6400194: rocket_0_2
+    6400196: rocket_1_2
+    6400198: rocket_2_2
+    6400200: rocket_3_2
+    6400202: Tube_2
+    7400000: iddle
+    7400002: move
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: iddle
+      takeName: Main
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: 60_130_attack_2
+        weight: 1
+      - path: 140_200_gear_2
+        weight: 1
+      - path: 300_500_walk_2
+        weight: 1
+      - path: Cube_1_4
+        weight: 1
+      - path: Cube_6
+        weight: 1
+      - path: SawTank_1
+        weight: 1
+      - path: SawTank_1/60_130_attack
+        weight: 1
+      - path: SawTank_1/140_200_gear
+        weight: 1
+      - path: SawTank_1/300_500_walk
+        weight: 1
+      - path: SawTank_1/Cube_5
+        weight: 1
+      - path: SawTank_1/gun
+        weight: 1
+      - path: SawTank_1/gun/Cylinder
+        weight: 1
+      - path: SawTank_1/gun/Symmetry
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/barrel_point
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2/Boole_1_3
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2/Boole_1_3/Boole_1_4
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2/Boole_1_3/Boole_1_4/Cube_3
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2/Boole_1_3/Boole_1_4/Cube_3/Cube_4
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2/Boole_1_3/Boole_1_4/Symmetry_3
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2/Boole_1_3/Boole_1_4/Symmetry_3/Cube
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2/Boole_1_3/Boole_1_4/Symmetry_3/Cube/Cube_2_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2/Boole_1_3/Tube
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2/Boole_1_3/Tube/Tube_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2/Cloner_3
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2/Cloner_3/Cylinder_0
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2/Cloner_3/Cylinder_0/Cylinder_0_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2/Cloner_3/Cylinder_1
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2/Cloner_3/Cylinder_1/Cylinder_1_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2/Cloner_3/Cylinder_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2/Cloner_3/Cylinder_2/Cylinder_2_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2/Cloner_3/Cylinder_3
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2/Cloner_3/Cylinder_3/Cylinder_3_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Symmetry_4
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Symmetry_4/Cloner_4
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Symmetry_4/Cloner_4/Cube_0_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Symmetry_4/Cloner_4/Cube_1_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Symmetry_4/Cloner_4/Cube_2_3
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Symmetry_4/Cloner_4/Cube_3_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Cloner_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Cloner_2/rocket_0
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Cloner_2/rocket_0/rocket_0_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Cloner_2/rocket_1
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Cloner_2/rocket_1/rocket_1_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Cloner_2/rocket_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Cloner_2/rocket_2/rocket_2_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Cloner_2/rocket_3
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Cloner_2/rocket_3/rocket_3_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/out
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Symmetry_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Symmetry_2/Cloner
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Symmetry_2/Cloner/Cube_0
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Symmetry_2/Cloner/Cube_1
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Symmetry_2/Cloner/Cube_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket_2/barrel_point_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket_2/roketter_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket_2/roketter_2/out_2
+        weight: 1
+      - path: SawTank_1/tracks
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/big_back
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/big_back/Cap_1
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/big_back/Cap_2
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/big_front
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/big_front/Cap_1_2
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/big_front/Cap_2_2
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/Cube_1_3
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/middle
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/middle/Cap_1_3
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/middle/Cap_2_3
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_0
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_1
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_2
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_3
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_4
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_5
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_6
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_7
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_8
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_9
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_10
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_11
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_12
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_13
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_14
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_15
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_16
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_17
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_18
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_19
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_20
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_21
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_22
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_23
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_24
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_25
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_26
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_27
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_28
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_29
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Spline_1
+        weight: 1
+      - path: tracks_4
+        weight: 1
+      - path: tracks_4/tracks_5
+        weight: 1
+      - path: tracks_4/tracks_5/big_back_2
+        weight: 1
+      - path: tracks_4/tracks_5/big_back_2/Cap_1_4
+        weight: 1
+      - path: tracks_4/tracks_5/big_back_2/Cap_2_4
+        weight: 1
+      - path: tracks_4/tracks_5/big_front_2
+        weight: 1
+      - path: tracks_4/tracks_5/big_front_2/Cap_1_5
+        weight: 1
+      - path: tracks_4/tracks_5/big_front_2/Cap_2_5
+        weight: 1
+      - path: tracks_4/tracks_5/Cube_1_5
+        weight: 1
+      - path: tracks_4/tracks_5/middle_2
+        weight: 1
+      - path: tracks_4/tracks_5/middle_2/Cap_1_6
+        weight: 1
+      - path: tracks_4/tracks_5/middle_2/Cap_2_6
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_0_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_1_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_2_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_3_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_4_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_5_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_6_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_7_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_8_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_9_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_10_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_11_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_12_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_13_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_14_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_15_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_16_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_17_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_18_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_19_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_20_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_21_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_22_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_23_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_24_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_25_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_26_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_27_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_28_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_29_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Spline_1_2_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: move
+      takeName: Main
+      firstFrame: 300
+      lastFrame: 500
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 1
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: 60_130_attack_2
+        weight: 1
+      - path: 140_200_gear_2
+        weight: 1
+      - path: 300_500_walk_2
+        weight: 1
+      - path: Cube_1_4
+        weight: 1
+      - path: Cube_6
+        weight: 1
+      - path: SawTank_1
+        weight: 1
+      - path: SawTank_1/60_130_attack
+        weight: 1
+      - path: SawTank_1/140_200_gear
+        weight: 1
+      - path: SawTank_1/300_500_walk
+        weight: 1
+      - path: SawTank_1/Cube_5
+        weight: 1
+      - path: SawTank_1/gun
+        weight: 1
+      - path: SawTank_1/gun/Cylinder
+        weight: 1
+      - path: SawTank_1/gun/Symmetry
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/barrel_point
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2/Boole_1_3
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2/Boole_1_3/Boole_1_4
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2/Boole_1_3/Boole_1_4/Cube_3
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2/Boole_1_3/Boole_1_4/Cube_3/Cube_4
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2/Boole_1_3/Boole_1_4/Symmetry_3
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2/Boole_1_3/Boole_1_4/Symmetry_3/Cube
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2/Boole_1_3/Boole_1_4/Symmetry_3/Cube/Cube_2_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2/Boole_1_3/Tube
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2/Boole_1_3/Tube/Tube_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2/Cloner_3
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2/Cloner_3/Cylinder_0
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2/Cloner_3/Cylinder_0/Cylinder_0_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2/Cloner_3/Cylinder_1
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2/Cloner_3/Cylinder_1/Cylinder_1_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2/Cloner_3/Cylinder_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2/Cloner_3/Cylinder_2/Cylinder_2_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2/Cloner_3/Cylinder_3
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Boole_1_2/Cloner_3/Cylinder_3/Cylinder_3_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Symmetry_4
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Symmetry_4/Cloner_4
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Symmetry_4/Cloner_4/Cube_0_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Symmetry_4/Cloner_4/Cube_1_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Symmetry_4/Cloner_4/Cube_2_3
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Boole_1/Symmetry_4/Cloner_4/Cube_3_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Cloner_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Cloner_2/rocket_0
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Cloner_2/rocket_0/rocket_0_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Cloner_2/rocket_1
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Cloner_2/rocket_1/rocket_1_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Cloner_2/rocket_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Cloner_2/rocket_2/rocket_2_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Cloner_2/rocket_3
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Cloner_2/rocket_3/rocket_3_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/out
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Symmetry_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Symmetry_2/Cloner
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Symmetry_2/Cloner/Cube_0
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Symmetry_2/Cloner/Cube_1
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket/roketter/Symmetry_2/Cloner/Cube_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket_2/barrel_point_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket_2/roketter_2
+        weight: 1
+      - path: SawTank_1/gun/Symmetry/G_Rocket_2/roketter_2/out_2
+        weight: 1
+      - path: SawTank_1/tracks
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/big_back
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/big_back/Cap_1
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/big_back/Cap_2
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/big_front
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/big_front/Cap_1_2
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/big_front/Cap_2_2
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/Cube_1_3
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/middle
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/middle/Cap_1_3
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/middle/Cap_2_3
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_0
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_1
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_2
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_3
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_4
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_5
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_6
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_7
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_8
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_9
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_10
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_11
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_12
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_13
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_14
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_15
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_16
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_17
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_18
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_19
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_20
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_21
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_22
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_23
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_24
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_25
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_26
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_27
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_28
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Cloner_5/rail_29
+        weight: 1
+      - path: SawTank_1/tracks/tracks_2/tracks_3/advanced_tracks/Spline_1
+        weight: 1
+      - path: tracks_4
+        weight: 1
+      - path: tracks_4/tracks_5
+        weight: 1
+      - path: tracks_4/tracks_5/big_back_2
+        weight: 1
+      - path: tracks_4/tracks_5/big_back_2/Cap_1_4
+        weight: 1
+      - path: tracks_4/tracks_5/big_back_2/Cap_2_4
+        weight: 1
+      - path: tracks_4/tracks_5/big_front_2
+        weight: 1
+      - path: tracks_4/tracks_5/big_front_2/Cap_1_5
+        weight: 1
+      - path: tracks_4/tracks_5/big_front_2/Cap_2_5
+        weight: 1
+      - path: tracks_4/tracks_5/Cube_1_5
+        weight: 1
+      - path: tracks_4/tracks_5/middle_2
+        weight: 1
+      - path: tracks_4/tracks_5/middle_2/Cap_1_6
+        weight: 1
+      - path: tracks_4/tracks_5/middle_2/Cap_2_6
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_0_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_1_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_2_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_3_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_4_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_5_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_6_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_7_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_8_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_9_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_10_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_11_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_12_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_13_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_14_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_15_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_16_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_17_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_18_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_19_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_20_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_21_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_22_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_23_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_24_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_25_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_26_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_27_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_28_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Cloner_6/rail_29_2
+        weight: 1
+      - path: tracks_4/tracks_5/tracks_6/advanced_tracks_2/Spline_1_2_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 3
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

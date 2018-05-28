@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: bc2e2521aa01f37449692e5e614e2d25
+timeCreated: 1461412717
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - pickEffect: {fileID: 112138, guid: 28b6744be94087b45ab926cc52983e53, type: 2}
+  - myBarrelPoint: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

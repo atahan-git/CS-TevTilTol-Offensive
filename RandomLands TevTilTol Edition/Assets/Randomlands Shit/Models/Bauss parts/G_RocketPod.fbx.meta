@@ -1,0 +1,217 @@
+fileFormatVersion: 2
+guid: 01b774ae0543a1e4c8211f48995714c6
+timeCreated: 1461500288
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Boole_1
+    100002: Boole_1_2
+    100004: Boole_1_3
+    100006: Boole_1_4
+    100008: Cloner
+    100010: Cloner_2
+    100012: Cloner_3
+    100014: Cloner_4
+    100016: Cube
+    100018: Cube_0
+    100020: Cube_0_2
+    100022: Cube_1
+    100024: Cube_1_2
+    100026: Cube_2
+    100028: Cube_2_2
+    100030: Cube_2_3
+    100032: Cube_3
+    100034: Cube_3_2
+    100036: Cube_4
+    100038: Cube_5
+    100040: Cylinder_0
+    100042: Cylinder_0_2
+    100044: Cylinder_1
+    100046: Cylinder_1_2
+    100048: Cylinder_2
+    100050: Cylinder_2_2
+    100052: Cylinder_3
+    100054: Cylinder_3_2
+    100056: //RootNode
+    100058: out
+    100060: rocket_0
+    100062: rocket_0_2
+    100064: rocket_1
+    100066: rocket_1_2
+    100068: rocket_2
+    100070: rocket_2_2
+    100072: rocket_3
+    100074: rocket_3_2
+    100076: roketter
+    100078: Symmetry
+    100080: Symmetry_2
+    100082: Symmetry_3
+    100084: Tube
+    100086: Tube_2
+    400000: Boole_1
+    400002: Boole_1_2
+    400004: Boole_1_3
+    400006: Boole_1_4
+    400008: Cloner
+    400010: Cloner_2
+    400012: Cloner_3
+    400014: Cloner_4
+    400016: Cube
+    400018: Cube_0
+    400020: Cube_0_2
+    400022: Cube_1
+    400024: Cube_1_2
+    400026: Cube_2
+    400028: Cube_2_2
+    400030: Cube_2_3
+    400032: Cube_3
+    400034: Cube_3_2
+    400036: Cube_4
+    400038: Cube_5
+    400040: Cylinder_0
+    400042: Cylinder_0_2
+    400044: Cylinder_1
+    400046: Cylinder_1_2
+    400048: Cylinder_2
+    400050: Cylinder_2_2
+    400052: Cylinder_3
+    400054: Cylinder_3_2
+    400056: //RootNode
+    400058: out
+    400060: rocket_0
+    400062: rocket_0_2
+    400064: rocket_1
+    400066: rocket_1_2
+    400068: rocket_2
+    400070: rocket_2_2
+    400072: rocket_3
+    400074: rocket_3_2
+    400076: roketter
+    400078: Symmetry
+    400080: Symmetry_2
+    400082: Symmetry_3
+    400084: Tube
+    400086: Tube_2
+    2300000: Cube
+    2300002: Cube_0
+    2300004: Cube_0_2
+    2300006: Cube_1
+    2300008: Cube_1_2
+    2300010: Cube_2
+    2300012: Cube_2_3
+    2300014: Cube_3
+    2300016: Cube_3_2
+    2300018: Cube_5
+    2300020: Cylinder_0_2
+    2300022: Cylinder_1_2
+    2300024: Cylinder_2_2
+    2300026: Cylinder_3_2
+    2300028: rocket_0_2
+    2300030: rocket_1_2
+    2300032: rocket_2_2
+    2300034: rocket_3_2
+    2300036: Tube_2
+    3300000: Cube
+    3300002: Cube_0
+    3300004: Cube_0_2
+    3300006: Cube_1
+    3300008: Cube_1_2
+    3300010: Cube_2
+    3300012: Cube_2_3
+    3300014: Cube_3
+    3300016: Cube_3_2
+    3300018: Cube_5
+    3300020: Cylinder_0_2
+    3300022: Cylinder_1_2
+    3300024: Cylinder_2_2
+    3300026: Cylinder_3_2
+    3300028: rocket_0_2
+    3300030: rocket_1_2
+    3300032: rocket_2_2
+    3300034: rocket_3_2
+    3300036: Tube_2
+    4300000: Cube
+    4300002: Cube_0
+    4300004: Cube_1
+    4300006: Cube_2
+    4300008: rocket_0_2
+    4300010: rocket_1_2
+    4300012: rocket_2_2
+    4300014: rocket_3_2
+    4300016: Cube_3
+    4300018: Cube_5
+    4300020: Tube_2
+    4300022: Cylinder_0_2
+    4300024: Cylinder_1_2
+    4300026: Cylinder_2_2
+    4300028: Cylinder_3_2
+    4300030: Cube_0_2
+    4300032: Cube_1_2
+    4300034: Cube_2_3
+    4300036: Cube_3_2
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
