@@ -65,14 +65,20 @@ public class Pauser : MonoBehaviour {
 
 
 		foreach (GameObject obj in toBeDisabledG)
-			obj.SetActive (false);
+			if(obj)
+				obj.SetActive (false);
 		foreach (MonoBehaviour mono in toBeDisabledS)
-			mono.enabled = false;
+			if(mono)
+				mono.enabled = false;
 
 		foreach (GameObject obj in toBeEnabledG)
-			obj.SetActive (true);
+			if(obj)
+				obj.SetActive (true);
 		foreach (MonoBehaviour mono in toBeEnabledS)
-			mono.enabled = true;
+			if(mono)
+				mono.enabled = true;
+
+		GunController.myGunCont.enabled = false;
 	}
 
 	public void UnPause () {
@@ -86,13 +92,19 @@ public class Pauser : MonoBehaviour {
 
 
 		foreach (GameObject obj in toBeDisabledG)
-			obj.SetActive (true);
+			if (obj)
+				obj.SetActive (true);
 		foreach (MonoBehaviour mono in toBeDisabledS)
-			mono.enabled = true;
+			if (mono)
+				mono.enabled = true;
 
 		foreach (GameObject obj in toBeEnabledG)
-			obj.SetActive (false);
+			if (obj)
+				obj.SetActive (false);
 		foreach (MonoBehaviour mono in toBeEnabledS)
-			mono.enabled = false;
+			if (mono)
+				mono.enabled = false;
+
+		GunController.myGunCont.enabled = true;
 	}
 }

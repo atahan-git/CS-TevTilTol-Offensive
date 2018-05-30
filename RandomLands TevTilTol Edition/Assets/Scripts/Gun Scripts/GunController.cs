@@ -72,6 +72,7 @@ public class GunController : MonoBehaviour {
 	public float reloadTimeMultiplier = 1f;
 
 	Animator anim;
+	public Animator anim2;
 	//public bool Inspect = false;
 	// Use this for initialization
 	void Start () {
@@ -141,10 +142,12 @@ public class GunController : MonoBehaviour {
 
 		if (!isShooting && Input.GetKeyDown (KeyCode.F)) {
 			anim.SetBool ("Inspect", true);
+			anim2.SetBool ("Inspect", true);
 		}
 
 		if (Input.GetKeyUp (KeyCode.F)) {
 			anim.SetBool ("Inspect", false);
+			anim2.SetBool ("Inspect", false);
 		}
 
 		if (Input.GetMouseButtonDown (0) && !autoFire && !isReloading && canFireAgain && !Input.GetKey(KeyCode.LeftShift)) {
@@ -155,14 +158,17 @@ public class GunController : MonoBehaviour {
 				InvokeRepeating ("AddAmmo", secondsPerAmmo, secondsPerAmmo);
 			}*/
 			anim.SetBool ("Inspect", false);
+			anim2.SetBool ("Inspect", false);
 			///InvokeRepeating("ReduceAccuracy", 0f, 0.1f);
 		}
 		if (curAmmo <= 0) {
 			CancelInvoke ("ShootRay");
 			//RemoveLine ();
 			anim.BroadcastMessage("StopShootAnim");
+			anim2.BroadcastMessage("StopShootAnim");
 
 			anim.SetBool ("Inspect", false);
+			anim2.SetBool ("Inspect", false);
 			/*if (ammoType == ammoTypes.heatSink) {
 				CancelInvoke ("AddAmmo");
 				InvokeRepeating ("AddAmmo", secondsPerAmmo, secondsPerAmmo);
@@ -174,6 +180,7 @@ public class GunController : MonoBehaviour {
 			CancelInvoke("ShootRay");
 			//RemoveLine();
 			anim.BroadcastMessage("StopShootAnim");
+			anim2.BroadcastMessage("StopShootAnim");
 
 			if(curAmmo <= 0 && !isReloading)
 				StartReload();
@@ -189,7 +196,9 @@ public class GunController : MonoBehaviour {
 			//RemoveLine();
 			StartReload();
 			anim.BroadcastMessage("StopShootAnim");
+			anim2.BroadcastMessage("StopShootAnim");
 			anim.SetBool ("Inspect", false);
+			anim2.SetBool ("Inspect", false);
 		}
 
 		if(!autoFire && !dontFire)
@@ -263,6 +272,7 @@ public class GunController : MonoBehaviour {
 
 		curAmmo -= 1;
 		anim.BroadcastMessage ("ShootAnim", (fireRate * fireRateMultiplier));
+		anim2.BroadcastMessage ("ShootAnim", (fireRate * fireRateMultiplier));
 		//print ("broadcasted");
 	}
 
@@ -274,6 +284,7 @@ public class GunController : MonoBehaviour {
 		isReloading = true;
 		Invoke ("FinishReload", reloadSeconds * reloadTimeMultiplier);
 		anim.BroadcastMessage ("ReloadAnim", reloadSeconds * reloadTimeMultiplier);
+		anim2.BroadcastMessage ("ReloadAnim", reloadSeconds * reloadTimeMultiplier);
 		//audio.Play ();
 		//print ("Started Reloding...");
 	}

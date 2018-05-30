@@ -49,12 +49,23 @@ public class GunPart : MonoBehaviour {
 	GunController myGunCont;
     GunDropEffect myDropEffect;
 
+	public bool isDroppedGun = false;
+
+	public bool isBarrel = false;
+	public bool isLazer = false;
+
 	// Use this for initialization
 	void Start () {
 
 		myGunCont = GunController.myGunCont;
 		//this.enabled = false;
-	
+		if (isDroppedGun) {
+			Transform[] myObjects = GetComponentsInChildren<Transform>();
+			foreach (Transform obj in myObjects)
+			{
+				obj.gameObject.layer = 0;
+			}
+		}
 	}
 	
 	// Update is called once per frame
@@ -69,10 +80,18 @@ public class GunPart : MonoBehaviour {
 			return;
 		if (ThePriority != priority)
 			return;
-
+		myGunCont = GetComponentInParent<GunController> ();
+		if(myGunCont == null)
         myGunCont = GunController.myGunCont;
         AddStats();
         MultiplyStats();
+
+
+		if (isBarrel) {
+			myGunCont.GetComponent<GunSharedValues> ().barrelPoint = transform.Find ("BarrelPoint");
+			myGunCont.GetComponent<Shoot_RaycastBullet> ().isLazer = isLazer;
+		}
+
 		//print ("anan zaaa");
 	}
 
@@ -160,12 +179,13 @@ public class GunPart : MonoBehaviour {
             return;
 
         myDropEffect = transform.root.gameObject.GetComponentInChildren<GunDropEffect>();
+		if (myDropEffect != null) {
+			myDropEffect.damage += damage;
+			myDropEffect.fireRate += fireRate;
 
-        myDropEffect.damage += damage;
-        myDropEffect.fireRate += fireRate;
-
-        myDropEffect.damage = (int)(myDropEffect.damage * MULdamage);
-        myDropEffect.fireRate *= MULfireRate;
+			myDropEffect.damage = (int)(myDropEffect.damage * MULdamage);
+			myDropEffect.fireRate *= MULfireRate;
+		}
 
         Transform[] myObjects = GetComponentsInChildren<Transform>();
 
@@ -185,8 +205,10 @@ public class GunPart : MonoBehaviour {
 
         myDropEffect = transform.root.gameObject.GetComponentInChildren<GunDropEffect>();
 
-        myDropEffect.damage = damage;
-        myDropEffect.fireRate = fireRate;
+		if (myDropEffect) {
+			myDropEffect.damage = damage;
+			myDropEffect.fireRate = fireRate;
+		}
 
         Transform[] myObjects = GetComponentsInChildren<Transform>();
 

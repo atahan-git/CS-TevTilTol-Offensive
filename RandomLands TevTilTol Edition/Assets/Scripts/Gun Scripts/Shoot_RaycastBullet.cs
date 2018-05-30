@@ -11,9 +11,14 @@ public class Shoot_RaycastBullet : NetworkBehaviour {
 
 
 	public GameObject bulletHoleDecal;
-	LineRenderer myLine;
 	//public EffectMuzzleFlash MuzzleEffect;
 	public GameObject muzzleEffect;
+	public GameObject muzzleEffectLazer;
+
+	public LineRenderer[] playerLineRenderers = new LineRenderer[1];
+	public LineRenderer[] enemyLineRenderers = new LineRenderer[1];
+
+	public bool isLazer;
 
 	[HideInInspector]
 	public float z = 10f;
@@ -100,20 +105,23 @@ public class Shoot_RaycastBullet : NetworkBehaviour {
 			if (health == null)
 				health = hit.collider.gameObject.GetComponentInChildren<Health> ();
 			if (health != null)
-				CmdDamage (hp.gameObject, val.damage);
+				CmdDamage (health.gameObject, val.damage);
 
 			//push the player backwards
 			if (health != null) {
 				//health.GetComponent<CharacterController> ().Move (r.direction * ((float)val.damage / (float)health.maxHealth) * 10f);
 			}
-					
-
-			CmdShoot (val.barrelPoint.position, hit.point, hit.normal, hp == null); 
+			GameObject target = hit.collider.gameObject;		
+			if (target.GetComponentInParent <NetworkIdentity> () != null && !target.GetComponent<GunDrop>()) {
+				CmdShoot2 (hit.point, hit.normal, target.GetComponentInParent<NetworkIdentity>().gameObject); 
+			} else {
+				CmdShoot (hit.point, hit.normal, (hit.collider.gameObject.GetComponent<GunDrop> () == null));
+			}
 
 		} else {
 			hit.point = (r.direction * 20) + r.origin;
 
-			CmdShoot (val.barrelPoint.position, hit.point, hit.normal,false); 
+			CmdShoot (hit.point, hit.normal, false); 
 		}
 
 		//-------------------------
@@ -121,54 +129,87 @@ public class Shoot_RaycastBullet : NetworkBehaviour {
 		Debug.DrawLine (val.barrelPoint.position, hit.point); 
 
 		//MuzzleEffect.ShowMuzzleEffect(val.barrelPoint.transform, true, Audio);
-		Instantiate (muzzleEffect, val.barrelPoint.position, val.barrelPoint.rotation);
 		//----------------------------------------
 	}
 
 	void RemoveLine () {
-		if (myLine == null)
-			return;
-		myLine.enabled = false;
+		foreach (LineRenderer rend in playerLineRenderers) {
+			if (rend)
+				rend.enabled = false;
+		}
+		foreach (LineRenderer rend in enemyLineRenderers) {
+			if (rend)
+				rend.enabled = false;
+		}
 	}
 
 
 	[Command]
 	void CmdDamage (GameObject tar, int dmgval) {
 		if (tar.GetComponent<Hp> ())
-			tar.GetComponent<Hp> ().Damage (dmgval, GetComponent<Hp>().mySide);
-		else if (tar.GetComponent<Health> ())
-			tar.GetComponent<Health> ().Damage (dmgval, transform);
+			tar.GetComponent<Hp> ().Damage (dmgval, GetComponent<Hp> ().mySide, transform.position);
+
 
 	}
 
 	[Command]
-	void CmdShoot (Vector3 start, Vector3 end, Vector3 normal, bool isEffect) {
-		ShowGfx (start, end, normal, isEffect);
-		RpcShoot (start, end, normal, isEffect);
+	void CmdShoot (Vector3 end, Vector3 normal, bool isEffect) {
+		//ShowGfx (end, normal, isEffect, null);
+		RpcShoot (end, normal, isEffect);
+	}
+
+	[Command]
+	void CmdShoot2 (Vector3 end, Vector3 normal, GameObject target) {
+		//ShowGfx (end, normal, true, target);
+		RpcShoot2 (end, normal, target);
 	}
 
 	[ClientRpc]
-	void RpcShoot (Vector3 start, Vector3 end, Vector3 normal, bool isEffect) {
-		ShowGfx (start, end, normal, isEffect);
+	void RpcShoot (Vector3 end, Vector3 normal, bool isEffect) {
+		ShowGfx (end, normal, isEffect, null);
+	}
+
+	[ClientRpc]
+	void RpcShoot2 (Vector3 end, Vector3 normal, GameObject target) {
+		ShowGfx (end, normal, true, target);
 	}
 
 
-	void ShowGfx (Vector3 start, Vector3 end, Vector3 normal, bool isEffect) {
+	void ShowGfx (Vector3 end, Vector3 normal, bool isEffect, GameObject target) {
+		
+		if (isLazer)
+			Instantiate (muzzleEffectLazer, val.barrelPoint.position, val.barrelPoint.rotation);
+		else
+			Instantiate (muzzleEffect, val.barrelPoint.position, val.barrelPoint.rotation);
+
 		//print ("Showing Gfx " + gameObject.name);
-		if (!myLine) {
-			myLine = GetComponent<LineRenderer> ();
+		LineRenderer myLine;
+		int i = isLazer ? 1 : 0;
+		if (isLocalPlayer) {
+			myLine = playerLineRenderers [i];
+		} else {
+			myLine = enemyLineRenderers [i];
 		}
 
 		if (myLine) {
 			myLine.enabled = true;
-			myLine.SetPosition (0, start);
+			myLine.SetPosition (0, val.barrelPoint.position);
 			myLine.SetPosition (1, end);
 			Invoke ("RemoveLine", 0.1f);
 		}
 
+		/*if (target != null)
+			print (isEffect.ToString() + " Decal Target = " + target.transform.root.name);
+		else
+			print (isEffect.ToString() + " Decal Target is Null");*/
+
 		//decals
 		if (isEffect) {
 			GameObject myDecal = (GameObject)Instantiate (bulletHoleDecal, end, Quaternion.FromToRotation (Vector3.up, normal));
+			if (target != null) {
+				myDecal.transform.parent = target.transform;
+				//print ("Decal Parent Set: " + myDecal.transform.parent.name);
+			}
 		}
 	}
 }

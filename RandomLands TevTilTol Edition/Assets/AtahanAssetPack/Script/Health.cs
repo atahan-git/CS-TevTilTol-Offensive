@@ -29,20 +29,6 @@ public class Health : MonoBehaviour {
 	void Start () {
 		s = this;
 		//health = 100;
-		switch (PlayerPrefs.GetInt ("Diff")) {
-		case 0:
-			healthMultiplier = 3f;
-			break;
-		case 1:
-			healthMultiplier = 2f;
-			break;
-		case 4:
-			healthMultiplier = 1f;
-			break;
-		default:
-			healthMultiplier = 2f;
-			break;
-		}
 
 		maxHealth = (int)(maxHealth * healthMultiplier);
 		health = maxHealth;
@@ -79,10 +65,10 @@ public class Health : MonoBehaviour {
 		}
 
 		//print (health);
-		if (health <= 0) {
+		/*if (health <= 0) {
 			AllDie ();
 			isAlive = false;
-		}
+		}*/
 
         /*if (Input.GetKeyDown(KeyCode.H))
         {
@@ -91,6 +77,7 @@ public class Health : MonoBehaviour {
 	}
 
 	public void CalculateLevel (){
+		return;
 		//print ("health Calculated");
 		maxHealth = (int)(((float)XpController.xp.level * (float)XpController.xp.level / 2f + 20f) * 10f * healthMultiplier);
 
@@ -99,15 +86,19 @@ public class Health : MonoBehaviour {
 
 	}
 
+	public void Damage(int damage, Transform caller){
+		Damage (damage,caller.position);
+	}
+
 	//use this to damage us
-	public void Damage (int damage, Transform caller){
-		health -= damage;
+	public void Damage (int damage, Vector3 caller){
+		//health -= damage;
 		ScoreController.myScore.AddScore (-damage);
 
 		GameObject myHit = (GameObject)Instantiate (hitEffect, hitEffectParent.position, hitEffectParent.rotation);
 		myHit.GetComponent<RectTransform> ().SetParent (hitEffectParent, false);
 		myHit.transform.localScale = new Vector3 (1, 1, 1);
-		myHit.GetComponent<HitEffect> ().hitPos = caller.position;
+		myHit.GetComponent<HitEffect> ().hitPos = caller;
 		myHit.GetComponent<HitEffect> ().fadeTime = map (Mathf.Clamp (damage, 5, 50), 5, 50, 4, 1);
 		myHit.GetComponent<HitEffect> ().damage = -damage;
 	}

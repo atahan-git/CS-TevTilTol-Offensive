@@ -82,8 +82,8 @@ public class UFO_Script : MonoBehaviour {
 			if (Physics.Raycast (transform.position + (Vector3.up * 50), Vector3.down, out hit, 200)) {
 				
 			} else {
-				col.gameObject.GetComponentInParent<Health> ().Damage (9000, transform);
-				StartCoroutine ("aSecondLater", col);
+				//col.gameObject.GetComponentInParent<Health> ().Damage (9000, transform);
+				//StartCoroutine ("aSecondLater", col);
 			}
 
 			col.gameObject.transform.position = hit.point;

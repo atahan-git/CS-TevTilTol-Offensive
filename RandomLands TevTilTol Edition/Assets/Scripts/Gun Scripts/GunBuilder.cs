@@ -1,13 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Networking;
 
-public class GunBuilder : MonoBehaviour {
+public class GunBuilder : NetworkBehaviour {
 
     public GameObject pickEffect;
     public bool isPlayerGun = false;
     public bool randomizeAtStart = false;
     GunController gcont;
 
+	[SyncVar]
     public Gun myGun = new Gun();
 
     GameObject myBody;
@@ -42,14 +44,17 @@ public class GunBuilder : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
-		if(GetComponent<UnityEngine.Networking.NetworkIdentity>()){
-			if(!GetComponent<UnityEngine.Networking.NetworkIdentity>().isLocalPlayer){
-				this.enabled = false;
-				return;
-			}
-		}
 
-		parentTrans = GetComponent<PlayerRelay> ().myPlayer.GetComponentInChildren<ShootAnimation> ().transform;
+		try {
+			if (isLocalPlayer) {
+					parentTrans = GetComponent<PlayerRelay> ().myPlayer.GetComponentInChildren<ShootAnimation> ().transform;
+			} else {
+				parentTrans = GetComponent<PlayerRelay>().GunParent.transform;
+
+			}
+		} catch {
+			parentTrans = transform;
+		}
 
         if (randomizeAtStart)
             RandomizeGunParts();
@@ -65,8 +70,45 @@ public class GunBuilder : MonoBehaviour {
 
     }
 
+	public void BuildGun() {
+		BuildGun (true, false, shouldCollide);
+		try {
+			if (isLocalPlayer) {
+				CmdBuildVisualEnemyGun (myGun, false);
+			}else{
+				BuildGun (false,true, true);
+			}
+			if(GetComponent<GunDrop>()){
+				CmdBuildVisualEnemyGun (myGun, true);
+			}
+		} catch {
+		}
+	}
+
+	[Command]
+	void CmdBuildVisualEnemyGun (Gun _gun, bool isEffect){
+		if (!isLocalPlayer) {
+			myGun = _gun;
+			BuildGun (false,true, true);
+		}
+
+		RpcBuildVisualEnemyGun (_gun, isEffect);
+	}
+
+	[ClientRpc]
+	void RpcBuildVisualEnemyGun (Gun _gun, bool isEffect){
+		if (!isLocalPlayer) {
+			myGun = _gun;
+			BuildGun (false, true, true);
+		}
+
+		if (isEffect) {
+			PickEffect ();
+		}
+	}
+
     // Update is called once per frame
-    public void BuildGun() {
+	public void BuildGun(bool isSetStats, bool isDefLayer,bool _shouldCollide) {
 
         //destroy every previous part
         if (objBody != null) {
@@ -148,14 +190,14 @@ public class GunBuilder : MonoBehaviour {
             objMagazine.transform.localScale = defSize;
         }
 
-        SetAllCollidersStatus(shouldCollide);
+		SetAllCollidersStatus(_shouldCollide);
 
-        if (GetComponent<GunController>())
+		if (GetComponent<GunController>() && isSetStats)
 		{
             //yield return 0;
             Invoke("SetStatsBroadcast", 0.1f);
         }
-		else if (GetComponentInChildren<GunDropEffect>())
+		else if (GetComponentInChildren<GunDropEffect>() || isDefLayer)
         {
 
             Invoke("SetVisualEffect", 0.1f);
@@ -218,14 +260,13 @@ public class GunBuilder : MonoBehaviour {
     }
 
     public void SetAllCollidersStatus(bool active) {
-        foreach (Collider c in GetComponentsInChildren<Collider>()) {
+		foreach (Collider c in parentTrans.GetComponentsInChildren<Collider>()) {
             c.enabled = active;
             if (c.GetComponent<MeshCollider>())
                 c.GetComponent<MeshCollider>().convex = true;
 
-            if (!active) {
-                Destroy(c);
-            }
+			c.enabled = active;
+			c.gameObject.name = active.ToString ();
         }
     }
 

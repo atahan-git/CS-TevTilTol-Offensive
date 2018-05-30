@@ -8,6 +8,7 @@ public class PlayerRelay : NetworkBehaviour {
 	public static PlayerRelay localRelay;
 
 	public GameObject myPlayer;
+	GameObject GunBase;
 
 	public GameObject[] enemyVisuals;
 	public MonoBehaviour[] startDis;
@@ -15,9 +16,19 @@ public class PlayerRelay : NetworkBehaviour {
 	[SyncVar]
 	public int myEnemyType = 0;
 
+	[SyncVar]
+	Quaternion gunRot;
+
+	public GameObject GunParent;
+
+	public Vector3 startPos;
+
 	// Use this for initialization
 	void Awake () {
 		myPlayer = GameObject.FindGameObjectWithTag ("Player");
+		GunBase = transform.GetChild (0).gameObject;
+		startPos = myPlayer.transform.position;
+		transform.position = new Vector3 (0, -5, 0);
 	}
 		
 
@@ -27,6 +38,8 @@ public class PlayerRelay : NetworkBehaviour {
 			ToggleEnemyVisuals (false);
 			gameObject.name = "Local " + gameObject.name;
 			localRelay = this;
+			GunParent.SetActive(false);
+			myPlayer.transform.position = new Vector3 (0, -5, 0);
 
 			Invoke ("DisableStuff", 0.5f);
 			TeamSelectionMenu.s.ActivateMenu (true);
@@ -35,14 +48,12 @@ public class PlayerRelay : NetworkBehaviour {
 		}
 	}
 
-	Vector3 startPos;
 
 	void DisableStuff (){
 		ToggleEnemyVisuals (false);
 		Cursor.lockState = CursorLockMode.None;
 		Cursor.visible = true;
 		myPlayer.SetActive (false);
-		startPos = myPlayer.transform.position;
 		myPlayer.transform.position = new Vector3 (0, -5, 0);
 		ToggleStartDisable (false);
 	}
@@ -86,10 +97,13 @@ public class PlayerRelay : NetworkBehaviour {
 
 		if (isLocalPlayer) {
 			transform.position = myPlayer.transform.position;
+			transform.rotation = Quaternion.Euler (new Vector3 (transform.rotation.eulerAngles.x, myPlayer.transform.GetChild (0).rotation.eulerAngles.y, transform.rotation.eulerAngles.z));
+			GunBase.transform.rotation = myPlayer.transform.GetChild (0).rotation;
+			gunRot = GunBase.transform.rotation;
 			Health.s.health = GetComponent<Hp> ().hpi;
+			Health.s.maxHealth = GetComponent<Hp> ().maxhp;
 		} else {
-
-
+			GunBase.transform.rotation = gunRot;
 		}
 	}
 
@@ -100,16 +114,13 @@ public class PlayerRelay : NetworkBehaviour {
 		}
 
 		enemyVisuals [myEnemyType].SetActive (toggle);
+		GetComponent<Hp>().healthBar = enemyVisuals [myEnemyType].GetComponentInChildren<UnityEngine.UI.Slider> ();
+		//print (gameObject.name +  " - HealthBar Set - " + enemyVisuals [myEnemyType].GetComponentInChildren<UnityEngine.UI.Slider> ().transform.parent.parent + " ---- " + enemyVisuals [myEnemyType].gameObject.name);
 	}
 
 	void ToggleEnemyVisuals (bool toggle, int teamId){
-		foreach (GameObject gm in enemyVisuals) {
-			if (gm != null)
-				gm.SetActive (false);
-		}
-
-		enemyVisuals [myEnemyType].SetActive (toggle);
 		enemyVisuals[myEnemyType].GetComponentInChildren<MeshRenderer>().material.color = teamId == 0 ? Color.red : Color.blue;
+		ToggleEnemyVisuals (toggle);
 	}
 
 	void ToggleStartDisable (bool toggle){

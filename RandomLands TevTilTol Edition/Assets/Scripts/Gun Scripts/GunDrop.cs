@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Networking;
 
-public class GunDrop : MonoBehaviour {
+public class GunDrop : NetworkBehaviour {
 
 	public int gunLevel = 1;
 	public int gunRarity = 0;
@@ -18,6 +19,8 @@ public class GunDrop : MonoBehaviour {
 		if (isDefOpen) {
 			Invoke ("lel", 0.5f);
 			GetComponent<Rigidbody> ().AddTorque (Random.Range(15,100), Random.Range(15,100), Random.Range(15,100));
+			if (!isServer)
+				GetComponent<GunBuilder> ().enabled = true;
 		}
 		
 
@@ -29,6 +32,8 @@ public class GunDrop : MonoBehaviour {
 	}
 	
 	public void MakeGun (int level, int rarity) {
+		if (!isServer)
+			return;
 
 		//print ("this activated");
 		gunLevel = level;
@@ -44,6 +49,9 @@ public class GunDrop : MonoBehaviour {
 		myGunBuilder.RandomizeGunParts ();
 		myGunBuilder.SetGunParts ();
 
+		myGun = myGunBuilder.myGun;
+		RpcMakeGun (myGun);
+
 		//randomly pick level and part
 		/*myGun.bodyType = giveRandomLevelPart(body);
 		myGun.barrelType = giveRandomLevelPart(barrel);
@@ -57,6 +65,18 @@ public class GunDrop : MonoBehaviour {
 		//create gun
 		myGunBuilder.enabled = true;
 
+	}
+
+	[ClientRpc]
+	void RpcMakeGun (GunBuilder.Gun _gun){
+		GunBuilder myGunBuilder = GetComponent<GunBuilder> ();
+		myGunBuilder.myGun = _gun;
+
+		//enable colliders
+		myGunBuilder.shouldCollide = true;
+
+		//create gun
+		myGunBuilder.enabled = true;
 	}
 
 	/*int giveRandomLevelPart (int[] partType){

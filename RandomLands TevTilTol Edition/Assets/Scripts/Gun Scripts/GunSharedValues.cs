@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Networking;
 
-public class GunSharedValues : MonoBehaviour {
+public class GunSharedValues : NetworkBehaviour {
 
 	public bool isPlayer = false;
 
@@ -26,18 +27,13 @@ public class GunSharedValues : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		if(GetComponent<UnityEngine.Networking.NetworkIdentity>()){
-			if(!GetComponent<UnityEngine.Networking.NetworkIdentity>().isLocalPlayer){
-				this.enabled = false;
-				return;
-			}
-		}
-
 		if(barrelPoints.Length == 0)
 			barrelPoints = new Transform[1];
 
-		if (myBulletSource == null && isPlayer && GetComponent<UnityEngine.Networking.NetworkIdentity>().isLocalPlayer) {
+		if (myBulletSource == null && isPlayer && isLocalPlayer) {
 			myBulletSource = GetComponent<PlayerRelay> ().myPlayer.transform.GetChild (0);
+		} else {
+			myBulletSource = transform;
 		}
 
 		if (myBulletSource == null) {
