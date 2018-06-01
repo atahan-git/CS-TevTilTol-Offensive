@@ -7,8 +7,6 @@ public class MultDeathController : NetworkBehaviour {
 
 	bool isDead = false;
 
-	public GameObject itemDrop;
-
 	// Update is called once per frame
 	void Update () {
 		if (isServer) {
@@ -20,10 +18,11 @@ public class MultDeathController : NetworkBehaviour {
 	}
 
 	void Die (){
-		GameObject myItem = (GameObject)Instantiate(itemDrop, transform.position + (Vector3.up * 2), transform.rotation);
+		GameObject myItem = (GameObject)Instantiate(STORAGE_Explosions.s.itemdrop, transform.position + (Vector3.up * 2), transform.rotation);
 		NetworkServer.Spawn (myItem);
-		if (myItem.GetComponent<GunDrop>())
-			myItem.GetComponent<GunDrop>().MakeGun(5, 0);
+		if (myItem.GetComponent<GunDrop> ()) {
+			myItem.GetComponent<GunDrop> ().MakeGun (GetComponent<GunBuilder>().myGun);
+		}
 
 		RpcDie ();
 		Invoke ("Revive",1f);
@@ -31,7 +30,7 @@ public class MultDeathController : NetworkBehaviour {
 
 	[ClientRpc]
 	void RpcDie (){
-		Instantiate (STORAGE_Explosions.s.normalExp, transform.position, transform.rotation);
+		Instantiate (STORAGE_Explosions.s.bigExp, transform.position, transform.rotation);
 		isDead = true;
 		if (isLocalPlayer) {
 			DeathControllerMultRelay.s.ToggleDeath (true);

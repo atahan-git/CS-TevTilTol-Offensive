@@ -266,7 +266,7 @@ public class GunBuilder : NetworkBehaviour {
                 c.GetComponent<MeshCollider>().convex = true;
 
 			c.enabled = active;
-			c.gameObject.name = active.ToString ();
+			//c.gameObject.name = active.ToString ();
         }
     }
 

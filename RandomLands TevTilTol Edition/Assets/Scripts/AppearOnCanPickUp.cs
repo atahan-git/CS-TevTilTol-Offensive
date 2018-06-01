@@ -27,4 +27,9 @@ public class AppearOnCanPickUp : MonoBehaviour {
     {
         highLightObject.SetActive(false);
     }
+
+
+	void OnDisable (){
+		highLightObject.SetActive(false);
+	}
 }

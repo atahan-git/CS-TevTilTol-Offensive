@@ -1,0 +1,332 @@
+fileFormatVersion: 2
+guid: f07bf3689a118dc4d9de633f967ae48b
+timeCreated: 1527863922
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Boole
+    100002: box_close_60_100
+    100004: box_open_10_50
+    100006: Cap_1
+    100008: Cap_1_2
+    100010: Cap_2
+    100012: Cap_2_2
+    100014: Cube
+    100016: Cube_2
+    100018: Cube_2_2
+    100020: Cube_2_3
+    100022: Cube_2_4
+    100024: Cube_2_5
+    100026: Cube_3
+    100028: Cylinder
+    100030: Extrude
+    100032: Extrude_2
+    100034: fan_rotat_110_140
+    100036: idle_0_5
+    100038: idle_close_52_58
+    100040: Null
+    100042: Null_1
+    100044: Null_2
+    100046: Null_3
+    100048: Null_4
+    100050: Null_5
+    100052: Symmetry
+    100054: Symmetry_2
+    100056: Symmetry_3
+    100058: //RootNode
+    400000: Boole
+    400002: box_close_60_100
+    400004: box_open_10_50
+    400006: Cap_1
+    400008: Cap_1_2
+    400010: Cap_2
+    400012: Cap_2_2
+    400014: Cube
+    400016: Cube_2
+    400018: Cube_2_2
+    400020: Cube_2_3
+    400022: Cube_2_4
+    400024: Cube_2_5
+    400026: Cube_3
+    400028: Cylinder
+    400030: Extrude
+    400032: Extrude_2
+    400034: fan_rotat_110_140
+    400036: idle_0_5
+    400038: idle_close_52_58
+    400040: Null
+    400042: Null_1
+    400044: Null_2
+    400046: Null_3
+    400048: Null_4
+    400050: Null_5
+    400052: Symmetry
+    400054: Symmetry_2
+    400056: Symmetry_3
+    400058: //RootNode
+    2100000: Leather_black
+    2100002: white
+    2100004: grey
+    2300000: Cap_1
+    2300002: Cap_1_2
+    2300004: Cap_2
+    2300006: Cap_2_2
+    2300008: Cube
+    2300010: Cube_2_2
+    2300012: Cube_2_3
+    2300014: Cube_2_5
+    2300016: Cube_3
+    2300018: Cylinder
+    2300020: Extrude
+    2300022: Extrude_2
+    3300000: Cap_1
+    3300002: Cap_1_2
+    3300004: Cap_2
+    3300006: Cap_2_2
+    3300008: Cube
+    3300010: Cube_2_2
+    3300012: Cube_2_3
+    3300014: Cube_2_5
+    3300016: Cube_3
+    3300018: Cylinder
+    3300020: Extrude
+    3300022: Extrude_2
+    4300000: Extrude
+    4300002: Cap_1
+    4300004: Cap_2
+    4300006: Extrude_2
+    4300008: Cap_1_2
+    4300010: Cap_2_2
+    4300012: Cube_2_2
+    4300014: Cube
+    4300016: Cube_2_3
+    4300018: Cube_3
+    4300020: Cylinder
+    4300022: Cube_2_5
+    7400000: idle close
+    7400002: idle open
+    7400004: open
+    7400006: close
+    7400008: fan
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: idle close
+      takeName: CINEMA_4D_Main
+      firstFrame: 0
+      lastFrame: 5
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: idle open
+      takeName: CINEMA_4D_Main
+      firstFrame: 54
+      lastFrame: 55
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: open
+      takeName: CINEMA_4D_Main
+      firstFrame: 10
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: close
+      takeName: CINEMA_4D_Main
+      firstFrame: 60
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: fan
+      takeName: CINEMA_4D_Main
+      firstFrame: 110
+      lastFrame: 140
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

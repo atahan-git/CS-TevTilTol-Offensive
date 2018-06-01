@@ -37,6 +37,12 @@ public class GunPicker : NetworkBehaviour {
 				RaycastHit hit;
 				if (Physics.Raycast (r, out hit, pickGunDistance, 256)) {
 					GunBuilder myGunBuilder = hit.collider.gameObject.GetComponentInParent<GunBuilder> (); //get the gun builder
+					WeaponDropBoxController myWeap = hit.collider.gameObject.GetComponentInParent<WeaponDropBoxController>();
+
+					if (myWeap) {
+						CmdOpenBox (myWeap.gameObject);
+						return;
+					}
 
 					if (!myGunBuilder)
 						return;
@@ -83,6 +89,11 @@ public class GunPicker : NetworkBehaviour {
 			}
 		}
 	}		
+
+	[Command]
+	void CmdOpenBox (GameObject box){
+		box.GetComponent<WeaponDropBoxController> ().Activate ();
+	}
 
 
 	[Command]

@@ -11,6 +11,8 @@ public class STORAGE_Explosions : MonoBehaviour {
 	public GameObject head;
 	public GameObject rocketExp;
 
+	public GameObject itemdrop;
+
 	// Use this for initialization
 	void Awake () {
 		s = this;
