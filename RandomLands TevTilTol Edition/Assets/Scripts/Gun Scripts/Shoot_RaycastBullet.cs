@@ -22,6 +22,8 @@ public class Shoot_RaycastBullet : NetworkBehaviour {
 
 	[HideInInspector]
 	public float z = 10f;
+
+	public AudioSource hitAud;
 	// Use this for initialization
 	void Start () {
 
@@ -60,11 +62,11 @@ public class Shoot_RaycastBullet : NetworkBehaviour {
 		Ray r = new Ray (val.myBulletSource.position, direction);
 		RaycastHit hit;        
 
-		int layerMask = 1023;
+		int layerMask = 2299; //100011111011
 		//print(layerMask);
 
-		if (val.isPlayer)
-			layerMask = 511;
+		/*if (val.isPlayer)
+			layerMask = 511;*/
 		
 		if (Physics.Raycast (r, out hit, Mathf.Infinity, layerMask)) {
 
@@ -78,8 +80,10 @@ public class Shoot_RaycastBullet : NetworkBehaviour {
 				hp = hit.collider.gameObject.GetComponentInParent<Hp> ();
 			if (hp == null)
 				hp = hit.collider.gameObject.GetComponentInChildren<Hp> ();
-			if (hp != null)
+			if (hp != null) {
 				CmdDamage (hp.gameObject, val.damage);
+				LocalDamageEffects ();
+			}
 
 			//push the guy backwards
 			/*if (hp != null) {
@@ -99,18 +103,20 @@ public class Shoot_RaycastBullet : NetworkBehaviour {
 				//print (r.direction * ((float)val.damage / (float)hp.maxhp) * 300f);
 			}*/
 
-			Health health = hit.collider.gameObject.GetComponent<Health> ();
+			/*Health health = hit.collider.gameObject.GetComponent<Health> ();
 			if (health == null)
 				health = hit.collider.gameObject.GetComponentInParent<Health> ();
 			if (health == null)
 				health = hit.collider.gameObject.GetComponentInChildren<Health> ();
-			if (health != null)
+			if (health != null){
 				CmdDamage (health.gameObject, val.damage);
+				LocalDamageEffects ();
+			}*/
 
 			//push the player backwards
-			if (health != null) {
+			/*if (health != null) {
 				//health.GetComponent<CharacterController> ().Move (r.direction * ((float)val.damage / (float)health.maxHealth) * 10f);
-			}
+			}*/
 			GameObject target = hit.collider.gameObject;		
 			if (target.GetComponentInParent <NetworkIdentity> () != null && !target.GetComponent<GunDrop>()) {
 				CmdShoot2 (hit.point, hit.normal, target.GetComponentInParent<NetworkIdentity>().gameObject); 
@@ -143,6 +149,11 @@ public class Shoot_RaycastBullet : NetworkBehaviour {
 		}
 	}
 
+	void LocalDamageEffects(){
+		GetComponent<GunController> ().CrosshairDamageEffect ();
+		hitAud.pitch = Random.Range (0.9f, 1.1f);
+		hitAud.Play ();
+	}
 
 	[Command]
 	void CmdDamage (GameObject tar, int dmgval) {

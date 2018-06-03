@@ -12,7 +12,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
     {
         [SerializeField] private bool m_IsWalking;
         [SerializeField] private float m_WalkSpeed;
-        [SerializeField] private float m_RunSpeed;
+		[SerializeField] private float m_RunSpeed;
+		[SerializeField] private float m_StutterMultiplier;
+		[SerializeField] private float m_StutterRecover;
         [SerializeField] [Range(0f, 1f)] private float m_RunstepLenghten;
         [SerializeField] private float m_JumpSpeed;
         [SerializeField] private float m_StickToGroundForce;
@@ -57,12 +59,26 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_Jumping = false;
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
+
+			def_WalkSpeed = m_WalkSpeed;
+			def_RunSpeed = m_RunSpeed;
         }
+
+		float def_WalkSpeed;
+		float def_RunSpeed;
+		public void GetHitStutter (float percent){
+			m_WalkSpeed = m_WalkSpeed * (1f - (Mathf.Clamp(percent * m_StutterMultiplier,0f,1f)));
+			m_RunSpeed = m_RunSpeed * (1f - (Mathf.Clamp(percent * m_StutterMultiplier,0f,1f)*0.5f));
+
+			//print ("New walk speed: " + m_WalkSpeed.ToString ());
+		}
 
 
         // Update is called once per frame
         private void Update()
         {
+			m_WalkSpeed = Mathf.MoveTowards (m_WalkSpeed, def_WalkSpeed, m_StutterRecover * Time.deltaTime);
+			m_RunSpeed = Mathf.MoveTowards (m_RunSpeed, def_RunSpeed, m_StutterRecover * Time.deltaTime);
             RotateView();
             // the jump state needs to read here to make sure it is not missed
             if (!m_Jump)

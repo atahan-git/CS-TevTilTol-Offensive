@@ -19,19 +19,20 @@ public class WeaponDropBoxController : NetworkBehaviour {
 
 	[SyncVar]
 	public bool isReady = false;
-	Vector2 readyTime = new Vector2 (6,8);
+	//Vector2 readyTime = new Vector2 (6f,8f);
 
 	Outline[] myOutlines;
 	// Use this for initialization
 	void Start () {
 		myOutlines = GetComponentsInChildren<Outline> ();
+		WeaponDropMaster.s.myBoxes.Add (this);
 
 		if (isServer) {
 			if (isReady) {
 				GetReady ();
 			} else {
 				SetReadyState (false);
-				Invoke ("GetReady", Random.Range (readyTime.x, readyTime.y));
+				//Invoke ("GetReady", Random.Range (readyTime.x, readyTime.y));
 			}
 		}
 
@@ -40,7 +41,7 @@ public class WeaponDropBoxController : NetworkBehaviour {
 		}
 	}
 
-	void GetReady(){
+	public void GetReady(){
 		isReady = true;
 		RpcGetReady ();
 	}
@@ -55,7 +56,7 @@ public class WeaponDropBoxController : NetworkBehaviour {
 			isReady = false;
 			RpcActivate ();
 			Invoke ("DropItem", 1.1f);
-			Invoke ("GetReady", Random.Range (readyTime.x, readyTime.y));
+			//Invoke ("GetReady", Random.Range (readyTime.x, readyTime.y));
 		}
 	}
 
@@ -77,11 +78,15 @@ public class WeaponDropBoxController : NetworkBehaviour {
 	void DropItem (){
 		GameObject myItem = (GameObject)Instantiate(STORAGE_Explosions.s.itemdrop, transform.position + Vector3.up, transform.rotation);
 		NetworkServer.Spawn (myItem);
+		int gunLevel = Random.Range (1, 6); //1-5
+		int gunRarity = 0;
+		/*gunRarity = gunLevel-((int)Mathf.Sqrt(Random.Range(0,gunLevel*gunLevel)));
+		gunRarity = Mathf.Clamp (gunRarity,0,gunLevel);*/
 		if (myItem.GetComponent<GunDrop>())
-			myItem.GetComponent<GunDrop>().MakeGun(5, 0);
+			myItem.GetComponent<GunDrop>().MakeGun(gunLevel, gunRarity);
 
 		RpcDropEffect (myItem);
-		myItem.GetComponent<Rigidbody> ().AddForce ((transform.TransformDirection (Vector3.forward) + (Vector3.up * 2)) * 300);
+		myItem.GetComponent<Rigidbody> ().AddForce ((transform.TransformDirection ((Vector3.forward + (Random.Range(-1f,1f)*Vector3.left))).normalized + (Vector3.up * 2)) * 200);
 		myItem.GetComponent<Rigidbody> ().AddTorque (Random.Range(15,100), Random.Range(15,100), Random.Range(15,100));
 	}
 
@@ -90,7 +95,7 @@ public class WeaponDropBoxController : NetworkBehaviour {
 		Instantiate(STORAGE_Explosions.s.normalExp, transform.position + Vector3.up, transform.rotation);
 
 		if (!isServer) {
-			gun.GetComponent<Rigidbody> ().AddForce ((transform.TransformDirection (Vector3.forward) + (Vector3.up * 2)) * 300);
+			gun.GetComponent<Rigidbody> ().AddForce ((transform.TransformDirection (Vector3.forward) + (Vector3.up * 2)) * 200);
 			gun.GetComponent<Rigidbody> ().AddTorque (Random.Range (15, 100), Random.Range (15, 100), Random.Range (15, 100));
 		}
 	}

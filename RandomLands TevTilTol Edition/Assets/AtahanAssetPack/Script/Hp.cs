@@ -15,6 +15,8 @@ public class Hp : NetworkBehaviour {
 
 	[SyncVar]
 	public int mySide = -1;
+
+	public AudioSource impactAud;
 	// Use this for initialization
 	void Start () {
 		hpi = maxhp;
@@ -62,12 +64,16 @@ public class Hp : NetworkBehaviour {
 	[Command]
 	void CmdDamage (int damage, Vector3 attackPos){
 		hpi -= damage;
+		RpcDamage (damage, attackPos);
 	}
 
 	[ClientRpc]
 	void RpcDamage (int damage, Vector3 attackPos){
 		if (isLocalPlayer) {
 			GetComponent<PlayerRelay> ().myPlayer.GetComponent<Health> ().Damage (damage,attackPos);
+			GetComponent<PlayerRelay> ().myPlayer.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController> ().GetHitStutter (damage/(float)maxhp);
+			impactAud.pitch = Random.Range (0.9f, 1.1f);
+			impactAud.Play ();
 		}
 	}
 

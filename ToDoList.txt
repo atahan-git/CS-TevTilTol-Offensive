@@ -1,0 +1,6 @@
+scoreboard
+start menu
+show ip!!
+set name
+change name
+no two same name

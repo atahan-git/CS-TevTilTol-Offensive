@@ -316,4 +316,30 @@ public class GunController : MonoBehaviour {
             CancelInvoke("AddAmmo");
         }
     }
+
+	public GameObject hitCrosshairParent;
+	public float fadeTime = 0.5f;
+	Coroutine myCoroutine;
+	public void CrosshairDamageEffect (){
+		if(myCoroutine != null)
+		StopCoroutine (myCoroutine);
+		myCoroutine = StartCoroutine (_CrosshairDamageEffect());
+	}
+
+
+	IEnumerator _CrosshairDamageEffect (){
+		float alpha = 1f;
+		while(alpha >= 0f){
+			foreach (Image img in hitCrosshairParent.GetComponentsInChildren<Image>()) {
+				if (img != null)
+					img.color = new Color (1, 1, 1, alpha);
+			}
+
+			alpha -= 1f/fadeTime * Time.deltaTime;
+
+			alpha = Mathf.Clamp (alpha,0, 1f);
+
+			yield return null;
+		}
+	}
 }

@@ -17,6 +17,8 @@ public class MultDeathController : NetworkBehaviour {
 		}
 	}
 
+	public float reviveTime = 10f;
+
 	void Die (){
 		GameObject myItem = (GameObject)Instantiate(STORAGE_Explosions.s.itemdrop, transform.position + (Vector3.up * 2), transform.rotation);
 		NetworkServer.Spawn (myItem);
@@ -25,7 +27,7 @@ public class MultDeathController : NetworkBehaviour {
 		}
 
 		RpcDie ();
-		Invoke ("Revive",1f);
+		Invoke ("Revive",reviveTime);
 	}
 
 	[ClientRpc]
@@ -33,7 +35,8 @@ public class MultDeathController : NetworkBehaviour {
 		Instantiate (STORAGE_Explosions.s.bigExp, transform.position, transform.rotation);
 		isDead = true;
 		if (isLocalPlayer) {
-			DeathControllerMultRelay.s.ToggleDeath (true);
+			GetComponent<PlayerRelay> ().myPlayer.SetActive (false);
+			DeathControllerMultRelay.s.ToggleDeath (true,reviveTime);
 			GetComponent<PlayerRelay> ().myPlayer.transform.position = GetComponent<PlayerRelay> ().startPos;
 			GetComponent<PlayerRelay> ().myPlayer.transform.GetChild (0).rotation = Quaternion.identity;
 		} else {
@@ -46,7 +49,8 @@ public class MultDeathController : NetworkBehaviour {
 	void RpcRevive (){
 		isDead = false;
 		if (isLocalPlayer) {
-			DeathControllerMultRelay.s.ToggleDeath (false);
+			GetComponent<PlayerRelay> ().myPlayer.SetActive (true);
+			DeathControllerMultRelay.s.ToggleDeath (false,reviveTime);
 		} else {
 			transform.Find ("enemyVisuals").gameObject.SetActive(true);
 			transform.Find ("GunBasePos").gameObject.SetActive(true);

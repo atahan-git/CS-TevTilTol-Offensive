@@ -71,14 +71,14 @@ public class GunBuilder : NetworkBehaviour {
     }
 
 	public void BuildGun() {
-		BuildGun (true, false, shouldCollide);
+		//BuildGun (true, false, shouldCollide);
 		try {
 			if (isLocalPlayer) {
+				BuildGun (true, false, shouldCollide);
 				CmdBuildVisualEnemyGun (myGun, false);
-			}else{
-				BuildGun (false,true, true);
-			}
-			if(GetComponent<GunDrop>()){
+			} else if (!GetComponent<GunDrop> ()) {
+				BuildGun (false, true, true);
+			} else {
 				CmdBuildVisualEnemyGun (myGun, true);
 			}
 		} catch {
@@ -87,10 +87,10 @@ public class GunBuilder : NetworkBehaviour {
 
 	[Command]
 	void CmdBuildVisualEnemyGun (Gun _gun, bool isEffect){
-		if (!isLocalPlayer) {
+		/*if (!isLocalPlayer) {
 			myGun = _gun;
-			BuildGun (false,true, true);
-		}
+			//BuildGun (false,true, true);
+		}*/
 
 		RpcBuildVisualEnemyGun (_gun, isEffect);
 	}
@@ -109,7 +109,7 @@ public class GunBuilder : NetworkBehaviour {
 
     // Update is called once per frame
 	public void BuildGun(bool isSetStats, bool isDefLayer,bool _shouldCollide) {
-
+		print ("building gun");
         //destroy every previous part
         if (objBody != null) {
             //print ("test");
@@ -203,6 +203,10 @@ public class GunBuilder : NetworkBehaviour {
             Invoke("SetVisualEffect", 0.1f);
         }
         //SetStatsBroadcast ();
+
+		if (GetComponent<ConvincingPhysicsSync> ()) {
+			GetComponent<ConvincingPhysicsSync> ().SetUpGunColliders (objBody);
+		}
     }
 
     public void SetStatsBroadcast() {

@@ -9,10 +9,14 @@ public class TeamSelectionMenu : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		s = this;
+		ActivateMenu (false);
 	}
 
 	public GameObject menuCam;
 	public GameObject menu;
+
+
+	public GameObject fillerCam;
 
 
 	public void ActivateMenu (bool toggle){
@@ -21,6 +25,10 @@ public class TeamSelectionMenu : MonoBehaviour {
 
 		TeamMenu.SetActive (true);
 		TypeMenu.SetActive (false);
+	}
+
+	public void DisableFillerCam (){
+		fillerCam.SetActive (false);
 	}
 
 
