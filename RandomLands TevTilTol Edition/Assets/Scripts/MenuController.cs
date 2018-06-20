@@ -25,6 +25,8 @@ public class MenuController : MonoBehaviour {
     public GameObject menu;
     public GameObject optionsMenu;
 	public GameObject hostMenu;
+	public GameObject joinMenu;
+	public GameObject startingMenu;
 	public GameObject normalStartMenu;
 	public GameObject quickStart;
 	public GameObject tutorialMenu;
@@ -213,11 +215,40 @@ public class MenuController : MonoBehaviour {
 		noTransition ();
 
 	}
+
+	public void Host(){
+		NetworkManagerRelay.s.HostGame ();
+		from = hostMenu;
+		to = startingMenu;
+		noTransition ();
+	}
 		
 
-	public void StartMenuBack () {
+	public void HostMenuBack () {
 
 		from = hostMenu;
+		to = menu;
+		noTransition ();
+	}
+
+	public void JoinMenu () {
+
+		from = menu;
+		to = joinMenu;
+		noTransition ();
+
+	}
+
+	public void Join(){
+		NetworkManagerRelay.s.JoinGame ();
+		from = joinMenu;
+		to = startingMenu;
+		noTransition ();
+	}
+
+	public void JoinMenuBack () {
+
+		from = joinMenu;
 		to = menu;
 		noTransition ();
 	}

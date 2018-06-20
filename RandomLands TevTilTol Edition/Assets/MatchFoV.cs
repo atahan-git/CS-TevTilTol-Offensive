@@ -8,8 +8,10 @@ public class MatchFoV : MonoBehaviour {
 
 	Camera myCam;
 	// Use this for initialization
-	void Start () {
+	void Awake () {
 		myCam = GetComponent<Camera> ();
+		GetComponent<cakeslice.OutlineEffect> ().enabled = false;
+		GetComponent<cakeslice.OutlineEffect> ().enabled = true;
 	}
 	
 	// Update is called once per frame

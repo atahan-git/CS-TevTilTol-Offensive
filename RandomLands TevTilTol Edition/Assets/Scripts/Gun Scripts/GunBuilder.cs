@@ -218,11 +218,14 @@ public class GunBuilder : NetworkBehaviour {
         GunPart[] myParts = GetComponentsInChildren<GunPart>();
 
         //foreach (GunPart part in myParts) {
-		parentTrans.BroadcastMessage("SetBaseStats");
-		parentTrans.BroadcastMessage("SetStats", 1);
-		parentTrans.BroadcastMessage("SetStats", 2);
-		parentTrans.BroadcastMessage("SetStats", 3);
-		parentTrans.BroadcastMessage("SetStats", 4);
+		if (objBody != null) {
+			objBody.BroadcastMessage ("SetBaseStats");
+			objBody.BroadcastMessage ("SetStats", 1);
+			objBody.BroadcastMessage ("SetStats", 2);
+			objBody.BroadcastMessage ("SetStats", 3);
+			objBody.BroadcastMessage ("SetStats", 4);
+			print ("Set base stats: " + gameObject.name + " - " + objBody.name);
+		}
         //}
 
 
@@ -246,20 +249,30 @@ public class GunBuilder : NetworkBehaviour {
             if (data > stopIfnotInRange.y || data < stopIfnotInRange.x)
                 Debug.LogError(data);
         }
+
+		if (isLocalPlayer)
+			CmdSetDps ();
     }
+
+	[Command]
+	void CmdSetDps (){
+		GunController myGunCont = GetComponent<GunController>();
+		ScoreBoard.s.dps [PlayerRelay.localRelay.myId] = (int)((float)myGunCont.damage * myGunCont.fireRate / 60f);
+	}
 
     void SetVisualEffect()
     {
         GunPart[] myParts = GetComponentsInChildren<GunPart>();
 
-        foreach (GunPart part in myParts)
-        {
-            BroadcastMessage("SetBaseVisualStat");
-            BroadcastMessage("SetVisualStat", 1);
-            BroadcastMessage("SetVisualStat", 2);
-            BroadcastMessage("SetVisualStat", 3);
-            BroadcastMessage("SetVisualStat", 4);
-        }
+        //foreach (GunPart part in myParts) {
+		if (objBody != null) {
+			objBody.BroadcastMessage ("SetBaseVisualStat");
+			objBody.BroadcastMessage ("SetVisualStat", 1);
+			objBody.BroadcastMessage ("SetVisualStat", 2);
+			objBody.BroadcastMessage ("SetVisualStat", 3);
+			objBody.BroadcastMessage ("SetVisualStat", 4);
+		}
+        //}
 
     }
 

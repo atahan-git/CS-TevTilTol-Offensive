@@ -2,6 +2,8 @@
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.Networking;
+using System.Collections;
+using System.Collections.Generic;
 
 public class Hp : NetworkBehaviour {
 
@@ -46,15 +48,18 @@ public class Hp : NetworkBehaviour {
 		print("Backwards error keeper damage called");
 	}
 
-	public void Damage (int damage, int attackSide, Vector3 attackPos){
+	public List<int> myDamagers = new List<int>();
+	public int lastDamager = -1;
+
+	public void Damage (int damage, int attackSide,int playerID, Vector3 attackPos){
 		//SetDirtyBit (0xFFFFFFFF);
 		if (attackSide == mySide) {
 			Debug.LogWarning ("Friendly Fire!");
-			attackSide = -5;
+			attackSide = mySide - 10;
 		}
 
 		if (attackSide != mySide) {
-			CmdDamage (damage, attackPos);
+			CmdDamage (damage,playerID, attackPos);
 			if (!isServer)
 				hpi -= damage;
 		}
@@ -62,7 +67,13 @@ public class Hp : NetworkBehaviour {
 
 
 	[Command]
-	void CmdDamage (int damage, Vector3 attackPos){
+	void CmdDamage (int damage, int playerID,Vector3 attackPos){
+		
+		if (lastDamager != -1) {
+			myDamagers.Add (lastDamager);
+		}
+		lastDamager = playerID;
+
 		hpi -= damage;
 		RpcDamage (damage, attackPos);
 	}

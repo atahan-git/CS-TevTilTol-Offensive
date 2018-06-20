@@ -34,11 +34,11 @@ public class PlayerRelay : NetworkBehaviour {
 
 		myPlayer = GameObject.FindGameObjectWithTag ("Player");
 		myPlayer.GetComponentInChildren<AudioListener> ().enabled = false;
-		foreach (Camera cam in myPlayer.GetComponentsInChildren<Camera>())
-			cam.enabled = false;
+
 		GunBase = transform.GetChild (0).gameObject;
 		startPos = myPlayer.transform.position;
 		transform.position = new Vector3 (0, -5, 0);
+
 	}
 		
 
@@ -51,6 +51,8 @@ public class PlayerRelay : NetworkBehaviour {
 			localRelay = this;
 			GunParent.SetActive(false);
 			myPlayer.transform.position = new Vector3 (0, -5, 0);
+			foreach (Camera cam in myPlayer.GetComponentsInChildren<Camera>())
+				cam.enabled = false;
 
 			CmdRegisterScoreboard (myName);
 
@@ -63,12 +65,7 @@ public class PlayerRelay : NetworkBehaviour {
 	[Command]
 	void CmdRegisterScoreboard (string name){
 		myName = name;
-		myId = connectionToClient.connectionId;
-
-		ScoreBoard.s.nicks.Insert (myId, myName);
-		ScoreBoard.s.k.Insert (myId, 0);
-		ScoreBoard.s.d.Insert (myId, 0);
-		ScoreBoard.s.a.Insert (myId, 0);
+		myId = ScoreBoard.s.AddPlayer (myName);
 
 		RpcGetId (myId);
 	}
@@ -95,10 +92,14 @@ public class PlayerRelay : NetworkBehaviour {
 		myPlayer.GetComponentInChildren<AudioListener> ().enabled = true;
 		foreach (Camera cam in myPlayer.GetComponentsInChildren<Camera>())
 			cam.enabled = true;
+		startPos = SpawnLocations.s.GetSpawnLocation ().position;
 		myPlayer.transform.position = startPos;
+		transform.position = startPos;
 		TeamSelectionMenu.s.ActivateMenu (false);
-		CmdTeamSelected (teamId, enemyType);
+		CmdTeamSelected (teamId, enemyType, startPos);
 		ToggleStartDisable (true);
+
+		Instantiate (STORAGE_Explosions.s.spawnEffect, transform.position, Quaternion.identity);
 		if (!Application.isEditor) {
 			Cursor.lockState = CursorLockMode.Locked;
 			Cursor.visible = false;
@@ -106,30 +107,35 @@ public class PlayerRelay : NetworkBehaviour {
 	}
 
 	[Command]
-	void CmdTeamSelected (int teamId, int enemyType){
+	void CmdTeamSelected (int teamId, int enemyType, Vector3 loc){
+		startPos = loc;
 		GetComponent<Hp> ().mySide = teamId;
 		myEnemyType = enemyType;
-		RpcEnemyType (teamId, enemyType);
+		RpcEnemyType (teamId, enemyType, startPos);
 		if (!isLocalPlayer) {
 			ToggleEnemyVisuals (true, teamId);
 		}
 	}
 
 	[ClientRpc]
-	void RpcEnemyType (int teamId, int enemyType){
+	void RpcEnemyType (int teamId, int enemyType, Vector3 loc){
+		startPos = loc;
 		print ("Enemy team color set");
 		myEnemyType = enemyType;
+		transform.position = startPos;
 		if (!isLocalPlayer) {
+			Instantiate (STORAGE_Explosions.s.spawnEffect, transform.position, Quaternion.identity);
 			ToggleEnemyVisuals (true, teamId);
 		}
 	}
 
 		
 
-	
+	float pingTimer = 0f;
+	float pingDelay = 1f;
 	// Update is called once per frame
 	void Update () {
-
+		
 		if (isLocalPlayer) {
 			transform.position = myPlayer.transform.position;
 			transform.rotation = Quaternion.Euler (new Vector3 (transform.rotation.eulerAngles.x, myPlayer.transform.GetChild (0).rotation.eulerAngles.y, transform.rotation.eulerAngles.z));
@@ -137,6 +143,13 @@ public class PlayerRelay : NetworkBehaviour {
 			gunRot = GunBase.transform.rotation;
 			Health.s.health = GetComponent<Hp> ().hpi;
 			Health.s.maxHealth = GetComponent<Hp> ().maxhp;
+
+			if (pingTimer < 0) {
+				ScoreBoard.s.ping [myId] = Network.GetAveragePing (Network.player);
+				pingTimer = pingDelay;
+			}
+
+			pingTimer -= Time.deltaTime;
 		} else {
 			GunBase.transform.rotation = gunRot;
 		}
@@ -154,7 +167,9 @@ public class PlayerRelay : NetworkBehaviour {
 	}
 
 	void ToggleEnemyVisuals (bool toggle, int teamId){
-		enemyVisuals[myEnemyType].GetComponentInChildren<MeshRenderer>().material.color = teamId == 0 ? Color.red : Color.blue;
+		foreach (ColorableMaterial mat in enemyVisuals [myEnemyType].GetComponentsInChildren<ColorableMaterial> ()) {
+			mat.SetColor (teamId);
+		}
 		ToggleEnemyVisuals (toggle);
 	}
 

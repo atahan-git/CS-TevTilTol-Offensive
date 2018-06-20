@@ -20,7 +20,7 @@ public class DeathControllerMultRelay : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	public void Update () {
 		timer.text = time.ToString ("F2") + "s";
 
 		time -= Time.deltaTime;

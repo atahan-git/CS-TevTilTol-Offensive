@@ -28,7 +28,6 @@ public class WeaponDropMaster : NetworkBehaviour {
 	
 	// Update is called once per frame
 	void GetReady () {
-		print ("getReady invoked");
 		WeaponDropBoxController myWeap = null;
 
 		myBoxes = myBoxes.Where(item => item != null).ToList();
@@ -37,7 +36,11 @@ public class WeaponDropMaster : NetworkBehaviour {
 		if (nonActiveList.Count > 0) {
 			myWeap = nonActiveList [Random.Range (0, nonActiveList.Count)];
 			myWeap.GetReady ();
+			print ("getReady invoked: " + myWeap.gameObject.name);
+		} else {
+			print ("getReady invoked: null");
 		}
+
 
 		Invoke ("GetReady", Random.Range (readyTime.x, readyTime.y));
 	}

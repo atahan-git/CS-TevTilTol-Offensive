@@ -25,9 +25,14 @@ public class QualitySetter : MonoBehaviour {
 	}
 
 	public void ValueChanged () {
-
-
 		QualitySettings.SetQualityLevel((int)mySlider.value, true);
 		PlayerPrefs.SetInt ("Quality", (int)mySlider.value);
+
+
+		foreach (DisableCostlyEffects dis in DisableCostlyEffects.allEffects) {
+			if (dis)
+				dis.SetState ((int)mySlider.value);
+		}
+		
 	}
 }

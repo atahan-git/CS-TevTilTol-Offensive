@@ -35,9 +35,9 @@ public class Shoot_RaycastBullet : NetworkBehaviour {
 			val = GetComponentInParent<GunSharedValues> ();
 		if (val == null)
 			val = GetComponentInChildren<GunSharedValues> ();
-	
+
 	}
-	
+
 	// Update is called once per frame
 	void Shoot () {
 
@@ -49,10 +49,10 @@ public class Shoot_RaycastBullet : NetworkBehaviour {
 
 		//Calculating the raycast direction
 		Vector3 direction = new Vector3 (
-			                    randomRadius * Mathf.Cos (randomAngle),
-			                    randomRadius * Mathf.Sin (randomAngle),
-			                    z
-		                    );
+			randomRadius * Mathf.Cos (randomAngle),
+			randomRadius * Mathf.Sin (randomAngle),
+			z
+		);
 
 		//Make the direction match the transform
 		//It is like converting the Vector3.forward to transform.forward
@@ -67,7 +67,7 @@ public class Shoot_RaycastBullet : NetworkBehaviour {
 
 		/*if (val.isPlayer)
 			layerMask = 511;*/
-		
+
 		if (Physics.Raycast (r, out hit, Mathf.Infinity, layerMask)) {
 
 			//deal damage
@@ -91,12 +91,12 @@ public class Shoot_RaycastBullet : NetworkBehaviour {
 				if (rg != null)
 					rg.AddForceAtPosition (r.direction * 300f, hit.point);*/
 			/*NavMeshAgent nav = hp.GetComponent<NavMeshAgent> ();
-				Rigidbody rg = hp.GetComponent<Rigidbody> ();
-				if (rg != null) {
-					//nav.updatePosition = false;
-					//nav.updateRotation = false;
-					//rg.AddForceAtPosition (Vector3.up * 3000f, hit.point);
-					/*nav.updatePosition = true;
+			Rigidbody rg = hp.GetComponent<Rigidbody> ();
+			if (rg != null) {
+				//nav.updatePosition = false;
+				//nav.updateRotation = false;
+				//rg.AddForceAtPosition (Vector3.up * 3000f, hit.point);
+				/*nav.updatePosition = true;
 					nav.updateRotation = true;
 				}*
 				//hp.transform.position += r.direction * ((float)val.damage / (float)hp.maxhp) * 1f;
@@ -158,7 +158,7 @@ public class Shoot_RaycastBullet : NetworkBehaviour {
 	[Command]
 	void CmdDamage (GameObject tar, int dmgval) {
 		if (tar.GetComponent<Hp> ())
-			tar.GetComponent<Hp> ().Damage (dmgval, GetComponent<Hp> ().mySide, transform.position);
+			tar.GetComponent<Hp> ().Damage (dmgval, GetComponent<Hp> ().mySide,GetComponent<PlayerRelay>().myId, transform.position);
 
 
 	}
@@ -187,11 +187,17 @@ public class Shoot_RaycastBullet : NetworkBehaviour {
 
 
 	void ShowGfx (Vector3 end, Vector3 normal, bool isEffect, GameObject target) {
-		
+
+		GameObject myEffect;
 		if (isLazer)
-			Instantiate (muzzleEffectLazer, val.barrelPoint.position, val.barrelPoint.rotation);
+			myEffect = (GameObject)Instantiate (muzzleEffectLazer, val.barrelPoint.position, val.barrelPoint.rotation);
 		else
-			Instantiate (muzzleEffect, val.barrelPoint.position, val.barrelPoint.rotation);
+			myEffect = (GameObject)Instantiate (muzzleEffect, val.barrelPoint.position, val.barrelPoint.rotation);
+
+		if (isLocalPlayer) {
+			myEffect.GetComponent<AudioSource> ().spatialBlend = 0f;
+			myEffect.GetComponent<AudioSource> ().volume = 0.6f;
+		}
 
 		//print ("Showing Gfx " + gameObject.name);
 		LineRenderer myLine;
@@ -216,6 +222,12 @@ public class Shoot_RaycastBullet : NetworkBehaviour {
 
 		//decals
 		if (isEffect) {
+			if (target != null) {
+				if (target.GetComponent<PlayerRelay> ()) {
+					if (target.GetComponent<PlayerRelay> ().isLocalPlayer)
+						return;
+				}
+			}
 			GameObject myDecal = (GameObject)Instantiate (bulletHoleDecal, end, Quaternion.FromToRotation (Vector3.up, normal));
 			if (target != null) {
 				myDecal.transform.parent = target.transform;

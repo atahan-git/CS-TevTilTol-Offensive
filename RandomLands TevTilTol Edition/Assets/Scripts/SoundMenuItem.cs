@@ -18,8 +18,8 @@ public class SoundMenuItem : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (curSound < 0)
-            return;
+        /*if (curSound < 0)
+            return;*/
         curSound = slider.value;
         PlayerPrefs.SetFloat("SoundVolume", curSound);
 	}

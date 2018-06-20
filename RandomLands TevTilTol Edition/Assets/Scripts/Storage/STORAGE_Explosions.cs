@@ -12,6 +12,7 @@ public class STORAGE_Explosions : MonoBehaviour {
 	public GameObject rocketExp;
 
 	public GameObject itemdrop;
+	public GameObject spawnEffect;
 
 	// Use this for initialization
 	void Awake () {

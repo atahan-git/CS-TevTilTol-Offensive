@@ -40,6 +40,14 @@ public class TeamSelectionMenu : MonoBehaviour {
 		team = teamId;
 		TeamMenu.SetActive (false);
 		TypeMenu.SetActive (true);
+		foreach (ColorableMaterial mat in TypeMenu.GetComponentsInChildren<ColorableMaterial> ()) {
+			mat.SetColor (teamId);
+		}
+	}
+
+	public void Back (){
+		TeamMenu.SetActive (true);
+		TypeMenu.SetActive (false);
 	}
 
 	public void SelectType (int type){

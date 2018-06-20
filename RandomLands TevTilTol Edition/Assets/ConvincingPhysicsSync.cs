@@ -12,6 +12,7 @@ public class ConvincingPhysicsSync : MonoBehaviour {
 	public float snapDist = 0.1f;
 
 	public GameObject colliders;
+	public GameObject effect;
 
 	// Use this for initialization
 	void Start () {
@@ -59,8 +60,14 @@ public class ConvincingPhysicsSync : MonoBehaviour {
 		foreach (Transform child in transform) {
 			if (child.gameObject != colliders) {
 				child.transform.position = lerpHelper.transform.position;
-				child.transform.rotation = lerpHelper.transform.rotation;
+				if (child.gameObject != effect) {
+					child.transform.rotation = lerpHelper.transform.rotation;
+				}
 			}
 		}
+	}
+
+	void OnDestroy (){
+		Destroy (lerpHelper);
 	}
 }

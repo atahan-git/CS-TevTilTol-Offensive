@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 using UnityStandardAssets.Utility;
 using Random = UnityEngine.Random;
+using System.Collections;
 
 namespace UnityStandardAssets.Characters.FirstPerson
 {
@@ -15,6 +16,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
 		[SerializeField] private float m_RunSpeed;
 		[SerializeField] private float m_StutterMultiplier;
 		[SerializeField] private float m_StutterRecover;
+		[SerializeField] private float m_ShakeWildness;	//0.1f
+		[SerializeField] private float m_ShakeTime;	//0.1f
+		[SerializeField] private float m_ShakeViewShift; //1f
+		[SerializeField] private float m_ShakeSideMult; //0.5f
         [SerializeField] [Range(0f, 1f)] private float m_RunstepLenghten;
         [SerializeField] private float m_JumpSpeed;
         [SerializeField] private float m_StickToGroundForce;
@@ -71,6 +76,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
 			m_RunSpeed = m_RunSpeed * (1f - (Mathf.Clamp(percent * m_StutterMultiplier,0f,1f)*0.5f));
 
 			//print ("New walk speed: " + m_WalkSpeed.ToString ());
+		}
+
+		void OnDisable (){
+			m_WalkSpeed = def_WalkSpeed;
+			m_RunSpeed = def_RunSpeed;
 		}
 
 
@@ -191,6 +201,45 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_FootstepSounds[0] = m_AudioSource.clip;
         }
 
+		Vector3 cameraShakeAmount = Vector3.zero;
+		Coroutine lastShake;
+
+		public void CameraShake (float damage , float _time){
+			if(lastShake != null)
+			StopCoroutine (lastShake);
+			lastShake =StartCoroutine (_CameraShake(damage,_time));
+		}
+
+		IEnumerator _CameraShake (float damage ,float _time){
+			m_ShakeTime = _time * 2f/3f;
+			float time = _time;
+			float middle = m_ShakeTime / 2f;
+			Vector3 randomDir = new Vector3 (Random.Range(-1f,1f)*m_ShakeSideMult,1f,-1f).normalized ;
+
+
+			Vector3 randomRotVector = new Vector3 (Random.Range(-1.0f,1.0f)*m_ShakeSideMult,1f,0).normalized;
+
+
+			m_MouseLook.ApplyRotation (transform, m_Camera.transform, m_ShakeViewShift * (damage/80f), 0);
+			//print("--------------------");
+			while (time > 0) {
+				//float lerpMult = (1f - Mathf.Abs ((time - middle) / middle));
+				float lerpMult = (time/m_ShakeTime);
+				//print ("1f - ((" + time.ToString() + " - " + middle.ToString() + ") / " + middle.ToString() + ") = " + lerpMult.ToString());
+				Vector3 lerpedPos = Vector3.Lerp (Vector3.zero, randomDir, lerpMult);
+
+				cameraShakeAmount = 0.1f*lerpedPos* (damage/80f);
+
+				m_MouseLook.m_CameraOffset = Quaternion.LookRotation (randomRotVector);
+				m_MouseLook.m_CameraOffsetMagnitude = lerpMult * m_ShakeWildness * (damage/80f);
+
+				time -= Time.deltaTime;
+				time = Mathf.Clamp (time, 0, m_ShakeTime);
+				yield return null;
+			}
+			cameraShakeAmount = Vector3.zero;
+		}
+
 
         private void UpdateCameraPosition(float speed)
         {
@@ -209,10 +258,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
             else
             {
-                newCameraPosition = m_Camera.transform.localPosition;
+				newCameraPosition = m_OriginalCameraPosition;
                 newCameraPosition.y = m_OriginalCameraPosition.y - m_JumpBob.Offset();
             }
-            m_Camera.transform.localPosition = newCameraPosition;
+
+			m_Camera.transform.localPosition = newCameraPosition+= cameraShakeAmount;
         }
 
 		float lastSpeed = -1f;
@@ -235,9 +285,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
             //m_IsWalking = !Input.GetKey(KeyCode.LeftShift);
            
 #endif
-			if (!m_IsWalking && m_Input.magnitude > 0 && lastSpeed == m_WalkSpeed)
+			if (!m_IsWalking && m_Input.magnitude > 0)
 				BroadcastMessage ("RunAnim", m_RunSpeed);
-			else if(m_IsWalking && lastSpeed == m_RunSpeed)
+			else
 				BroadcastMessage ("StopRunAnim");
 
             // set the desired speed to be walking or running

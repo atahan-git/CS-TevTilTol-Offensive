@@ -17,10 +17,11 @@ public class KapiScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		goToRotation.eulerAngles = new Vector3 (0, openDegree, 0);
 	}
 	
 	// Update is called once per frame
-	void OnMouseDown (){
+	/*void OnMouseDown (){
 
 		if (currentState) {
 			goToRotation.eulerAngles = new Vector3 (0, closeDegree, 0);
@@ -30,7 +31,7 @@ public class KapiScript : MonoBehaviour {
 			currentState = true;
 		}
 
-	}
+	}*/
 
 
 	void Update () {

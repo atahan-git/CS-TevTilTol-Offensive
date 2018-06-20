@@ -72,7 +72,7 @@ public class UFO_Script : MonoBehaviour {
 	public GameObject spawnEffect;
 
 	void OnTriggerExit (Collider col){
-
+		return;
 		if(col.gameObject.tag == "Player" && ShouldKillOutsidePlayer)
         {
 			print ("cant escape");

@@ -15,6 +15,8 @@ public class DPS_Text : MonoBehaviour {
     void Start () {
 	
 	}
+
+	int oldLel = -1;
 	
 	// Update is called once per frame
 	void Update () {
@@ -33,5 +35,14 @@ public class DPS_Text : MonoBehaviour {
 
         int lel = (int)((float)myGunCont.damage * myGunCont.fireRate / 60f);
         statValue.text = lel.ToString() + " DPS";
+
+		/*if (lel != oldLel) {
+			try {
+				ScoreBoard.s.dps [PlayerRelay.localRelay.myId] = lel;
+			} catch {
+			}
+		}*/
+
+		oldLel = lel;
     }
 }

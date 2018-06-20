@@ -11,6 +11,8 @@ public class GunSceneReferences : MonoBehaviour {
 	public Text TextCurAmmo;
 	public Slider SlideAmmo;
 
+	public GameObject HitCrosshair;
+
 	// Use this for initialization
 	void Start () {
 		

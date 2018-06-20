@@ -73,6 +73,7 @@ public class GunController : MonoBehaviour {
 
 	Animator anim;
 	public Animator anim2;
+	UnityStandardAssets.Characters.FirstPerson.FirstPersonController myFPS;
 	//public bool Inspect = false;
 	// Use this for initialization
 	void Start () {
@@ -87,7 +88,7 @@ public class GunController : MonoBehaviour {
 		if (val == null)
 			val = GetComponent<GunSharedValues> ();
 		
-		switch (PlayerPrefs.GetInt ("Diff")) {
+		/*switch (PlayerPrefs.GetInt ("Diff")) {
 		case 0:
 			damageMultiplier = 2.5f;
 			ammoMultiplier = 2f;
@@ -104,7 +105,7 @@ public class GunController : MonoBehaviour {
 		default:
 			damageMultiplier = 1f;
 			break;
-		}
+		}*/
 		
 
 		if (myGunCont != null)
@@ -112,12 +113,14 @@ public class GunController : MonoBehaviour {
 		myGunCont = this;
 
 		anim = GetComponent<PlayerRelay>().myPlayer.GetComponentInChildren<Animator> ();
+		myFPS = GetComponent<PlayerRelay> ().myPlayer.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController> ();
 
 		GunSceneReferences myRef = GetComponent<PlayerRelay> ().myPlayer.GetComponent<GunSceneReferences> ();
 		crosshairs = myRef.crosshairs;
 		TextCurAmmo = myRef.TextCurAmmo;
 		TextMaxAmmo = myRef.TextMaxAmmo;
 		SlideAmmo = myRef.SlideAmmo;
+		hitCrosshairParent = myRef.HitCrosshair;
 	}
 	
 	// Update is called once per frame
@@ -273,6 +276,7 @@ public class GunController : MonoBehaviour {
 		curAmmo -= 1;
 		anim.BroadcastMessage ("ShootAnim", (fireRate * fireRateMultiplier));
 		anim2.BroadcastMessage ("ShootAnim", (fireRate * fireRateMultiplier));
+		myFPS.CameraShake (damage, 60f / (float)(fireRate * fireRateMultiplier));
 		//print ("broadcasted");
 	}
 
@@ -332,7 +336,7 @@ public class GunController : MonoBehaviour {
 		while(alpha >= 0f){
 			foreach (Image img in hitCrosshairParent.GetComponentsInChildren<Image>()) {
 				if (img != null)
-					img.color = new Color (1, 1, 1, alpha);
+					img.color = new Color (img.color.r, img.color.g, img.color.b, alpha);
 			}
 
 			alpha -= 1f/fadeTime * Time.deltaTime;

@@ -23,4 +23,9 @@ public class Decal : MonoBehaviour {
 
 		Destroy (gameObject);
 	}
+
+	void OnDisable (){
+		CancelInvoke ();
+		Disappear ();
+	}
 }

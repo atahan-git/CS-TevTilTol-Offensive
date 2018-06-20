@@ -242,13 +242,13 @@ namespace cakeslice
 
         private void OnEnable()
         {
-            Outline[] o = FindObjectsOfType<Outline>();
+            /*Outline[] o = FindObjectsOfType<Outline>();
 
             foreach(Outline oL in o)
             {
                 oL.enabled = false;
                 oL.enabled = true;
-            }
+            }*/
         }
 
         void OnDestroy()
